@@ -1,0 +1,45 @@
+body{
+    background-image: url('Plus.png');
+background-size: cover;
+background-position: center center;
+min-height: 80vh;
+background-repeat: no-repeat;
+font-family: 'Nunito', sans-serif;
+padding: 0;
+}
+
+
+
+nav{
+    background-color: #6930C3;
+    
+    
+}
+
+.navbar-brand{
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-link{
+    font-family:'Nunito', sans-serif;
+    color: white;
+    margin-top: 35px;
+    font-size: 1rem;
+
+    margin-right: 50px;
+}
+.grad{
+    position: relative;
+    left: 24%;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grad {
+    left: 5px;
+      width: 300%;
+    }
+  }
+

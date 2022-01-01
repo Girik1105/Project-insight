@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@200;300;400;600&display=swap');
+
+body{
+    background-image: url('https://s6.gifyu.com/images/Landing.jpg');
+background-size: cover;
+background-position: center center;
+min-height: 80vh;
+background-repeat: no-repeat;
+font-family: 'Nunito', sans-serif;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.fredoka, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka One', cursive;
+}
+
+.nunito, p, input, .btn{
+font-family: 'Nunito', sans-serif;
+}
+
+.teal{
+    color:#64DFDF;
+}
+
+.purple{
+    color:#6930C3;
+}
+
+.yellow{
+    color:#FFF48F;
+}
+
+.white{
+    color: white;
+}
+
+.teal__bg{
+    background-color:#64DFDF;
+}
+
+.teal_light__bg{
+    background-color:#64DFDF;
+}
+
+.purple__bg{
+    background-color:#6930C3;
+}
+
+.lilac__bg{
+    background-color:#B980F0;
+}
+
+.yellow__bg{
+    background-color:#FFF48F;
+}
+
+.tomato__bg{
+    background-color: #ED8E7C;
+}
+
+.green__bg{
+    background-color: #93D9A3;
+}
+
+.grey__bg{
+    background-color: #EEEEEE;
+}
+
+.home{
+    display: flex;
+
+}
+
+.home div{
+text-align: center;
+margin: auto;
+padding-top: 15%;
+}
+.form-control{
+    border-radius: 50px;
+}
+
+.btn{
+    padding: 1rem 4rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #7868E6;
+}
+
+.btn:hover{
+    background-color: #7868E6;
+}
+
+.login{
+    background-image: url('https://s6.gifyu.com/images/Login.jpg');
+
+}
+
+.login__img img{
+    width: 100%;
+}
+
+.signup{
+    background-image: url('https://s6.gifyu.com/images/Sign-Up.jpg');
+}
+
+@media only screen and (max-width: 425px) {
+    .login__img img{
+        width: 50%;
+    }
+}
