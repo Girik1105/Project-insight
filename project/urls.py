@@ -27,8 +27,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
 
+    path('dashboard/', include('dashboard.urls')),
+    path('profile/', include('accounts.urls')),
+
     path('', views.index, name="index"),
-    path('dashboard/', views.dashboard, name="dashboard"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
