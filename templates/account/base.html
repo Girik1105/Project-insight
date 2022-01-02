@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block head_title %}{% endblock %}</title>
+    {% include "landing/snippets/head.html" %}
+    <style>
+        a{
+            color: #25c1ff;
+        }
+        body{
+            font-size: 1.15rem;
+        }
+        label{
+            padding: 0.4rem 0;
+            font-weight: 500;
+        }
+      
+    </style>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+</head>
+<body>
+
+    <div class="row container-fluid">
+        <div class="col-12">
+            {% include "landing/snippets/nav.html" %}
+        </div>
+        <div class="col-12">
+            {% block maincontent %}
+          
+            {% endblock maincontent %}
+        </div>
+        
+    </div>
+
+</body>
+</html>

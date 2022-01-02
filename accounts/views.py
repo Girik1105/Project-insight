@@ -16,7 +16,7 @@ def profile_edit_view(request):
         if form.is_valid():
             form.save()
 
-            return redirect('dashboard:index')
+            return redirect('dashboard')
 
     context = {'form': form}
-    return render(request, 'landing/accounts/profile_edit.html', context)
+    return render(request, 'landing/profile_edit.html', context)
