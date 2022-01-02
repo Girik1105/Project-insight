@@ -15,45 +15,55 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "What is 2+2",
-        choice1: "Yes",
-        choice2: "No",
-        choice3: "4",
-        choice4: "8",
+        question: "How does centralized procurement of goods beneficial for chain store?",
+        choice1: "Offer economies of scale",
+        choice2: "Hiring good managers. ",
+        choice3: "Flexibility",
+        choice4: "Diffusuion of Risk",
         answer: function () {
-            return this.choice3
+            return this.choice1
         }
     },
     {
-        question: "Is Girik a programmer?",
-        choice1: "Yes",
-        choice2: "No",
-        choice3: "Not sure",
-        choice4: "None of the above",
+        question: "Identify the limitation of Chain store which explains that managing the multiple shops have to obey the instructions received from the head office",
+        choice1: "Lack of Personal touch",
+        choice2: "Difficult to change demand",
+        choice3: "Limited Selection of goods",
+        choice4: "Lack of Initiative",
         answer: function () {
-            return this.choice1
+            return this.choice4
         }
     }, 
     {
-        question: "What is Kr Mangalam",
-        choice1: "School",
-        choice2: "College",
-        choice3: "Office",
-        choice4: "A Building",
+        question: "Identify the WRONG advantage of chain store:",
+        choice1: "Transfer of Goods",
+        choice2: "Elimination of middlemen",
+        choice3: "Limited Variety of goods",
+        choice4: "Flexibilty",
         answer: function () {
-            return this.choice1
+            return this.choice3
         },
-    },
-        {
-            question: "Is apple a fruit",
-            choice1: "No",
-            choice2: "Yes",
-            choice3: "Can't say",
-            choice4: "None of the above",
-            answer: function () {
-                return this.choice2
-            }
     },   
+    {
+        question: "Identify the advantages of Chain store which explains that the losses incurred by one shop may be covered by profits in other shops",
+        choice1: "Low Cost",
+        choice2: "Diffusion of Risk",
+        choice3: "Flexibility",
+        choice4: "No bad debts",
+        answer: function () {
+            return this.choice2
+        }
+    }, 
+    {
+        question: "Which of these is not a feature of Chain store?",
+        choice1: "Located in populous localities",
+        choice2: "Sale on credit basis",
+        choice3: "Savings in cost of operation",
+        choice4: "Centrally Controlled by Head Office",
+        answer: function () {
+            return this.choice2
+        }
+    }, 
 ];
 
 const scorePoints = 100;
@@ -90,7 +100,7 @@ choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptAnswers) return 
 
-        acceptingAnswers = false;
+        acceptAnswers = false;
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.innerText
 
