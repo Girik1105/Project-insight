@@ -1,0 +1,36 @@
+{% extends "landing/snippets/base.html" %}
+{% load static %}
+
+{% block maincontent %}
+
+     <!-- ======= Hero Section ======= -->
+     <section id="hero" class="d-flex align-items-center">
+
+        <div class="container-fluid" >
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-in" data-aos-delay="650">
+              <h1>
+                {% if user.is_authenticated %}Welcome back @{{ user.username }}! {% else %}Welcome to Project Internal Trade{% endif %}
+              </h1>
+              <h2 style="font-size: 1rem;">{% if user.is_authenticated %}Some Text to show the user when he enters!{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
+              
+              {% if user.is_authenticated %}
+              <div><a href="{% url 'dashboard' %}" class="btn-get-started scrollto">Go back to Dashboard</a></div>
+              <div style="margin-bottom: 10%;"><a href="{% url 'account_logout' %}" class="btn-get-started scrollto">Log out</a></div>
+              {% else %}
+              <div style="margin-bottom: 10%;"><a href="{% url 'account_signup' %}" class="btn-get-started scrollto">Start</a></div>
+              {% endif %}
+
+            </div>
+            <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-in" data-aos-delay="650">
+              <img src="{% static 'assets/main.png' %}" class="img-fluid animated" alt="">
+            </div>
+          </div>
+        </div>
+    
+      </section>
+      <!-- End Hero -->
+    
+      <main id="main">    
+
+{% endblock maincontent %}

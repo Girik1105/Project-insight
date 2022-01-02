@@ -1,0 +1,25 @@
+{% extends "landing/snippets/base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+{% block maincontent %}
+
+<div class="signup__container d-flex flex-md-row flex-column my-5 py-md-5">
+    <div class="login__img col-md-5 text-center" >
+        <img src="{% static 'assets/signup.svg' %}" alt="login icon">
+    </div>
+    <div class="signup__form m-auto col-md-6 mx-3">
+        <form method="post">
+            <h1 class="yellow py-5 text-center">Signup</h1>
+            {% csrf_token %}
+            {% bootstrap_form form %}
+    
+            <div class="d-flex flex-column pt-3">
+                <button onclick= "location.href='home.html'" class="mx-auto btn purple__bg white">Create Account</button>
+                <p class="align-middle m-auto py-3">Have an account? <a href="{% url 'account_login' %}"> Sign In</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock maincontent %}

@@ -15,34 +15,44 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "Is Tanveer a trash Coder?",
+        question: "What is 2+2",
         choice1: "Yes",
         choice2: "No",
-        choice3: "He'll feel bad:yes",
-        choice4: "Who is Tanveer I dunno I dunno?",
+        choice3: "4",
+        choice4: "8",
         answer: function () {
-            return this.choice4
+            return this.choice3
         }
     },
     {
-        question: "Aadit is the real _____",
-        choice1: "King",
-        choice2: "Punjabi",
-        choice3: "Trash (like Tanveer)",
-        choice4: "Boss",
+        question: "Is Girik a programmer?",
+        choice1: "Yes",
+        choice2: "No",
+        choice3: "Not sure",
+        choice4: "None of the above",
         answer: function () {
             return this.choice1
         }
     }, 
     {
-        question: "Girik saves your ass",
-        choice1: "Eveytime",
-        choice2: "I think not",
-        choice3: "He is God",
-        choice4: "All hail Girik",
+        question: "What is Kr Mangalam",
+        choice1: "School",
+        choice2: "College",
+        choice3: "Office",
+        choice4: "A Building",
         answer: function () {
-            return this.choice4
-        }
+            return this.choice1
+        },
+    },
+        {
+            question: "Is apple a fruit",
+            choice1: "No",
+            choice2: "Yes",
+            choice3: "Can't say",
+            choice4: "None of the above",
+            answer: function () {
+                return this.choice2
+            }
     },   
 ];
 
@@ -116,13 +126,14 @@ choices.forEach(choice => {
 
 incrementScore = num => {
     score += num;
-    scoreText.innerText = score;
+    scoreText.innerText = `${score}/${100*maxQuestions}`;
 }
 
 function startGame () {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions]; // Spreading array with ...
+    scoreText.innerText = `${score}/${100*maxQuestions}`;
     getNewQuestion();
 }
 

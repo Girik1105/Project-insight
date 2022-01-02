@@ -1,0 +1,32 @@
+{% extends "landing/snippets/base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+{% block maincontent %}
+
+<body class="login">
+    <div class="login__container d-flex flex-md-row flex-column my-5 py-md-5">
+        <div class="login__img col-md-5 text-center" >
+            <img class="" src="{% static 'assets/login.svg' %}" alt="login icon">
+        </div>
+        <div class="login__form m-auto col-md-6 mx-3">
+            <form method="POST">
+                <h1 class="teal py-5 text-center">Login</h1>
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <div class="d-flex flex-column pt-3">
+                    <button  class="mx-auto btn purple__bg white">Sign In</button>
+                    <p class="align-middle m-auto py-3">Dont have an account? <a href="{% url 'account_signup' %}" > Sign Up</a></p>
+                    <!-- <p class="align-middle m-auto py-3">Log In as <a href="{% url 'index' %}" >Guest</a></p> -->
+    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+
+{% endblock maincontent %}
