@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'quize_game/style.css' %}">
     <title>High Scores</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
             <ul id="highScoresList">
             </ul>
 
-            <a href="index.html" class="btn">Back to Home</a>
+            <a href="{% url 'quiz_index' %}" class="btn">Back to Home</a>
 
         </div>
     </div>
-    <script src="highscores.js"></script>
+    <script src="{% static 'quiz_game/highscores.js' %}"></script>
 </body>
 </html>

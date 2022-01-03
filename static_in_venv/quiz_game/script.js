@@ -69,10 +69,22 @@ let questions = [
 const scorePoints = 100;
 const maxQuestions = questions.length;
 
+const endBtn = document.querySelector('#end-btn');
+const endBtnItem = document.querySelector('#endBtnItem');
+
+function endDisplay() {
+    if (endBtn.classList.contains('d-none')) {
+        endBtn.classList.toggle('d-none');
+    }
+    if (endBtnItem.classList.contains('d-none')) {
+        endBtnItem.classList.toggle('d-none');
+    }
+}
+
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > maxQuestions) {
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('end.html');
+        return endDisplay();
     }
 
     questionCounter++;

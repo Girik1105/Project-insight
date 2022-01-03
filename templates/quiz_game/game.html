@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="{% static 'quiz_game/style.css' %}">
+    <link rel="stylesheet" href="{% static 'quiz_game/game.css' %}">
 </head>
 <body>
     <div class="container">
+
         <div id="game" class="justify-center flex-column">
             <div id="hud">
                 <div class="hud-item">
@@ -53,6 +55,9 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div id="end-btn" class="container d-none">
+        <a href="{% url 'quiz_end' %}"><button id="endBtnItem" class="btn btn-primary d-none">Finish</button></a>
+    </div>
+    <script src="{% static 'quiz_game/script.js' %}"></script>
 </body>
 </html>

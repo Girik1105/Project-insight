@@ -19,3 +19,23 @@ def department_store_video(request):
 def wholesale_video(request):
     context = {}
     return render(request, 'dashboard/wholesale.html', context)
+
+@login_required
+def quiz_index(request):
+    context = {}
+    return render(request, 'quiz_game/index.html', context)
+
+@login_required
+def quiz_game(request):
+    context = {}
+    return render(request, 'quiz_game/game.html', context)
+
+@login_required
+def quiz_highscores(request):
+    context = {}
+    return render(request, 'quiz_game/highscores.html', context)
+
+@login_required
+def quiz_end(request):
+    context = {}
+    return render(request, 'quiz_game/end.html', context)
