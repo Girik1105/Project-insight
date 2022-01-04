@@ -44,3 +44,4 @@ def quiz_highscores(request):
 def quiz_end(request):
     context = {}
     return render(request, 'quiz_game/end.html', context)
+

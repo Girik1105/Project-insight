@@ -10,16 +10,16 @@
 
     <div class="container mt-5 mb-5">
         <div class="row no-gutters">
-            <div class="col-md-4 col-lg-4"><img src="{{ user.profile.profile_picture.url }}"></div>
+            <div class="col-md-4 col-lg-4"><img  src="{{ user.profile.profile_picture.url }}"></div>
             <div class="col-md-8 col-lg-8">
                 <div class="d-flex flex-column">
                     <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">
                         <h3 class="display-5">{% if user.profile.name %}{{ user.profile.name }}{% else %}Add a Name{% endif %}</h3><i class="fa fa-facebook"></i><i class="fa fa-google"></i><i class="fa fa-youtube-play"></i><i class="fa fa-dribbble"></i><i class="fa fa-linkedin"></i>
                     </div>
                     <div class="p-3 bg-black text-white">
-                        <h6 class="ml-3">{% if user.profile.gender %}{{ user.profile.gender }}{% else %}Select Your Gender{% endif %}</h6>
-                        <h6 class="ml-3">{% if user.profile.location %}{{ user.profile.location }}{% else %}Add your location{% endif %}</h6>
-                        <h6 class="ml-3">{% if user.profile.birth_date %}{{ user.profile.birth_date }}{% else %}Add your Birthday{% endif %}</h6>
+                        <h6 class="ml-3"><i class="fas fa-user-alt"  style="margin-right: .7rem;"></i>{% if user.profile.gender %}{{ user.profile.gender }}{% else %}Select Your Gender{% endif %}</h6>
+                        <h6 class="ml-3"> <i class="fas fa-map-marker-alt" style="margin-right: 1rem;"></i>{% if user.profile.location %}{{ user.profile.location }}{% else %}Add your location{% endif %}</h6>
+                        <h6 class="ml-3"> <i class="fas fa-birthday-cake" style="margin-right: .8rem;"></i>{% if user.profile.birth_date %}{{ user.profile.birth_date }}{% else %}Add your Birthday{% endif %}</h6>
                     </div>
                     <div class="d-flex flex-row text-white">
                         <div class="p-4 bg-primary text-center skill-block">

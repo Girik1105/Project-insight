@@ -3,7 +3,7 @@
         <div class="container-fluid">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_dT1E1P.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
-          <a class="navbar-brand" href="home.html">Insight.</a>
+          <a class="navbar-brand" href="{% url 'index' %}">Insight.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -14,12 +14,12 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html">Explore</a>
+                <a class="nav-link" aria-current="page" href="{% url 'about' %}">Explore</a>
               </li>
 
               {% if user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Resources</a>
+                <a class="nav-link" href="{% url 'resources' %}">Resources</a>
               </li>
               
               <li class="nav-item">
