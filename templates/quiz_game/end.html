@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'quiz_game/style.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Score</title>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">Your Final Score</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your score:</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" disabled>Save</button>
+            </form>
+            <a href="{% url 'quiz_game' %}" class="btn">Play Again</a>
+            <a href="{% url 'quiz_index' %}" class="btn">Go Home</a>
+        </div>
+    </div>
+    <script src="{% static 'quiz_game/end.js' %}"></script>
+</body>
+</html>
