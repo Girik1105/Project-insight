@@ -133,3 +133,8 @@ input::placeholder {
     font-size: 5rem;
     text-align: center;
 }
+
+.d-none {
+    position:absolute;
+    display:none;
+}
