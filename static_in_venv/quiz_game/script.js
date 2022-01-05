@@ -4,6 +4,8 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 const correctAnswerDisplay = document.querySelector('.correct-answer-display');
+const correctAnswerDisplayVideo = document.querySelector('#video-item');
+
 
 console.log(choices);
 
@@ -133,15 +135,17 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.add(classToApply)
 
             correctAnswerDisplay.innerText = `CORRECT ANSWER: ${currentQuestion.answer()}`;
+            correctAnswerDisplayVideo.classList.toggle('d-none');
             
             setTimeout(() => {
                 correctAnswerDisplay.innerText = "";
-            }, 2000);
+                correctAnswerDisplayVideo.classList.toggle('d-none');
+            }, 5000);
 
             setTimeout(() => {
                 selectedChoice.parentElement.classList.remove(classToApply);
                 getNewQuestion();
-            }, 2000);
+            }, 5000);
         }
     })
 });
