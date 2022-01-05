@@ -21,6 +21,11 @@ def wholesale_video(request):
     return render(request, 'dashboard/wholesale.html', context)
 
 @login_required
+def retail_video(request):
+    context = {}
+    return render(request, 'dashboard/retail.html', context)
+
+@login_required
 def quiz_index(request):
     context = {}
     return render(request, 'quiz_game/index.html', context)
@@ -39,3 +44,4 @@ def quiz_highscores(request):
 def quiz_end(request):
     context = {}
     return render(request, 'quiz_game/end.html', context)
+

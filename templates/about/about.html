@@ -1,0 +1,30 @@
+{% extends "landing/snippets/base.html" %}
+{% load static %}
+
+{% block maincontent %}
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="{% static 'assets/about.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>Learning Objectives <img style="width: 4rem;" src="{% static 'assets/target.png' %}" alt=""></h3>
+            
+            <h5 style="font-family: 'Rubik', sans-serif;">This is web-app should be able to:</h5>
+            <ul>
+              <li><i class="fas fa-microscope"></i>Describe the meaning and types of internal trade.</li>
+              <li><i class="fas fa-microscope"></i>Specify the services of wholesalers to manufactures & retailers.</li>
+              <li><i class="fas fa-microscope"></i>Explain the services of retailers to wholesalers/manufacturers and consumers.</li>
+              <li><i class="fas fa-microscope"></i>Explain the form of large scale retailers.</li>
+            </ul>
+           
+        </div>
+   
+      </div>
+    </section><!-- End About Section -->
+
+    {% endblock maincontent %}

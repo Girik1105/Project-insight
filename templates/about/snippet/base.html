@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'landing/snippets/head.html' %}
+
+<body>
+    {% include "landing/snippets/nav.html" %}
+
+    {% block maincontent %}{% endblock maincontent %}
+    
+    {% include 'landing/snippets/footer.html' %}
+</body>
+</html>

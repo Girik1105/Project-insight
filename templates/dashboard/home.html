@@ -10,16 +10,16 @@
 
     <div class="container mt-5 mb-5">
         <div class="row no-gutters">
-            <div class="col-md-4 col-lg-4"><img src="{{ user.profile.profile_picture.url }}"></div>
+            <div class="col-md-4 col-lg-4"><img  src="{{ user.profile.profile_picture.url }}"></div>
             <div class="col-md-8 col-lg-8">
                 <div class="d-flex flex-column">
                     <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">
                         <h3 class="display-5">{% if user.profile.name %}{{ user.profile.name }}{% else %}Add a Name{% endif %}</h3><i class="fa fa-facebook"></i><i class="fa fa-google"></i><i class="fa fa-youtube-play"></i><i class="fa fa-dribbble"></i><i class="fa fa-linkedin"></i>
                     </div>
                     <div class="p-3 bg-black text-white">
-                        <h6 class="ml-3">{% if user.profile.gender %}{{ user.profile.gender }}{% else %}Select Your Gender{% endif %}</h6>
-                        <h6 class="ml-3">{% if user.profile.location %}{{ user.profile.location }}{% else %}Add your location{% endif %}</h6>
-                        <h6 class="ml-3">{% if user.profile.birth_date %}{{ user.profile.birth_date }}{% else %}Add your Birthday{% endif %}</h6>
+                        <h6 class="ml-3"><i class="fas fa-user-alt"  style="margin-right: .7rem;"></i>{% if user.profile.gender %}{{ user.profile.gender }}{% else %}Select Your Gender{% endif %}</h6>
+                        <h6 class="ml-3"> <i class="fas fa-map-marker-alt" style="margin-right: 1rem;"></i>{% if user.profile.location %}{{ user.profile.location }}{% else %}Add your location{% endif %}</h6>
+                        <h6 class="ml-3"> <i class="fas fa-birthday-cake" style="margin-right: .8rem;"></i>{% if user.profile.birth_date %}{{ user.profile.birth_date }}{% else %}Add your Birthday{% endif %}</h6>
                     </div>
                     <div class="d-flex flex-row text-white">
                         <div class="p-4 bg-primary text-center skill-block">
@@ -109,15 +109,26 @@
                                      
                                         <!-- Content Row-->
                                         <div class="row gx-4 gx-lg-5">
-                                            <div class="col-md-4 mb-5">
+                                            <div class="col-md-6 mb-5">
                                                 <div class="card h-100">
                                                     <div class="card-body">
-                                                        <h2 class="card-title">Wholesale Trade Video </h2>
-                                                        <p class="card-text">A video about wholesale trade</p>
+                                                        <h2 class="card-title">Brief Explanation</h2>
+                                                        <p class="card-text">Play this short video to get a comprehensive overview of wholesale trade.</p>
                                                     </div>
                                                     <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'wholesale_video' %}">Play</a></div>
                                                 </div>
                                             </div>
+                                            
+                                            <div class="col-md-6 mb-5">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Wholesale Trade Game</h2>
+                                                        <p class="card-text">Game on the services provided by wholesale traders.</p>
+                                                    </div>
+                                                    <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'quiz_game' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
+                                                </div>
+                                            </div>
+        
                                         </div>
                                     </div>
                                 </div>
@@ -179,20 +190,20 @@
                                             <div class="col-md-6 mb-5">
                                                 <div class="card h-100">
                                                     <div class="card-body">
-                                                        <h2 class="card-title">Itinerant Trader</h2>
-                                                        <p class="card-text">A fraction represents a part of a whole or, more generally, any number of equal parts.</p>
+                                                        <h2 class="card-title">Types of Retailers</h2>
+                                                        <p class="card-text">Beyond the distinctions in the products they provide, there are structural differences among retailers that influence their strategies and results. One of the reasons the retail industry is so large and powerful is its diversity.</p>
                                                     </div>
-                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="assets/">Play</a></div>
+                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'retail_video' %}">Play</a></div>
                                                 </div>
                                             </div>
                                             
                                             <div class="col-md-6 mb-5">
                                                 <div class="card h-100">
                                                     <div class="card-body">
-                                                        <h2 class="card-title">Small Scale Trader</h2>
-                                                        <p class="card-text">The term “integer” was adapted in Mathematics from Latin. Integer means intact or whole.</p>
+                                                        <h2 class="card-title">Retail Trade Game</h2>
+                                                        <p class="card-text">A small trader refers to a market participant whose buying and selling activity is small enough for them to be exempt from certain regulatory requirements. It is often used to refer to traders or small financial firms, whose trading volumes are relatively low.</p>
                                                     </div>
-                                                    <div class="card-footer "><a class="btn btn-primary  btn-sm" href="assets/videos/1.mp4" style="background-color: #a17fdd; border: 0px;">Play</a></div>
+                                                    <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'quiz_game' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -248,36 +259,29 @@
                                             </div>
                                         </div>
                                      
-                                        <!-- Content Row-->
-                                        <div class="row gx-4 gx-lg-5">
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Chain Stores</h5>
-                                                        <p class="card-text">A fraction represents a part of a whole or, more generally, any number of equal parts.</p>
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="assets/">Play</a></div>
+                                       <!-- Content Row-->
+                                       <div class="row gx-4 gx-lg-5">
+                                       
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Departmental Stores</h5>
+                                                    <p class="card-text">Decimals are a set of numbers written together with a dot in between them that is called a decimal point.</p>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Departmental Stores</h5>
-                                                        <p class="card-text">See a video on departmental store</p>
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'department_store_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Departmental Store Game</h5>
-                                                        <p class="card-text">Play a gamee departmental store</p>
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'quiz_game' %}">Play</a></div>
-                                                </div>
+                                                <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'department_store_video' %}">Play</a></div>
                                             </div>
                                         </div>
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Game</h5>
+                                                    <p class="card-text">The term “integer” was adapted in Mathematics from Latin. Integer means intact or whole.</p>
+                                                </div>
+                                                <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'quiz_game' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                     </div>
                                 </div>
                               </div>

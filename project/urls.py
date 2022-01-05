@@ -29,8 +29,11 @@ urlpatterns = [
 
     path('dashboard/', include('dashboard.urls')),
     path('profile/', include('accounts.urls')),
+    
 
     path('', views.index, name="index"),
+    path('resources/', views.resources, name="resources"),
+    path('about/', views.about, name="about"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
