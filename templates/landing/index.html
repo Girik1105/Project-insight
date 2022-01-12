@@ -10,9 +10,9 @@
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-in" data-aos-delay="650">
               <h1>
-                {% if user.is_authenticated %}Welcome back @{{ user.username }}! {% else %}Welcome to Project Internal Trade{% endif %}
+                {% if user.is_authenticated %}Welcome back @{{ user.username }}! {% else %}Welcome to Lesson Internal Trade{% endif %}
               </h1>
-              <h2 style="font-size: 1rem;">{% if user.is_authenticated %}Some Text to show the user when he enters!{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
+              <h2 style="font-size: 1rem;">{% if user.is_authenticated %}“It is during our darkest moments that we must focus to see the light.” -Aristotle{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
               
               {% if user.is_authenticated %}
               <div><a href="{% url 'dashboard' %}" class="btn-get-started scrollto">Go back to Dashboard</a></div>
