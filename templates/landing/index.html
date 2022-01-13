@@ -12,7 +12,7 @@
               <h1>
                 {% if user.is_authenticated %}Welcome back @{{ user.username }}! {% else %}Welcome to Lesson Internal Trade{% endif %}
               </h1>
-              <h2 style="font-size: 1rem;">{% if user.is_authenticated %}“It is during our darkest moments that we must focus to see the light.” -Aristotle{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
+              <h2 style="font-size: 1rem;">{% if user.is_authenticated %}“It is during our darkest moments that we must focus to see the light.” ~Aristotle{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
               
               {% if user.is_authenticated %}
               <div><a href="{% url 'dashboard' %}" class="btn-get-started scrollto">Go back to Dashboard</a></div>
