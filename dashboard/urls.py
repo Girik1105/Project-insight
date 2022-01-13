@@ -15,7 +15,7 @@ urlpatterns = [
     path('quiz/highscores/', views.quiz_highscores, name="quiz_highscores"),
     path('quiz/end/', views.quiz_end, name="quiz_end"),
     
-    path('retai/game/', views.retail_game, name="retail_game"),
+    path('retail/game/', views.retail_game, name="retail_game"),
 ]
 
 
