@@ -26,6 +26,11 @@ def retail_video(request):
     return render(request, 'dashboard/retail.html', context)
 
 @login_required
+def vending_store_video(request):
+    context = {}
+    return render(request, 'dashboard/vending_store.html', context)
+
+@login_required
 def quiz_index(request):
     context = {}
     return render(request, 'quiz_game/index.html', context)
