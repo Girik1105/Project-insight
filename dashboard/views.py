@@ -54,3 +54,8 @@ def quiz_end(request):
 def retail_game(request):
     context = {}
     return render(request, 'retail_game/WebGL/index.html', context)
+
+@login_required
+def video_video(request):
+    context = {}
+    return render(request, 'dashboard/anothervid.html', context)

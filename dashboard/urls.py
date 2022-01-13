@@ -9,6 +9,7 @@ urlpatterns = [
     path('wholesale/video/', views.wholesale_video, name="wholesale_video"),
     path('retail/video/', views.retail_video, name="retail_video"),
     path('vending/video/', views.vending_store_video, name="vending_store_video"),
+    path('video/', views.video_video, name="video_video"),
 
     path('quiz/', views.quiz_index, name="quiz_index"),
     path('quiz/game/', views.quiz_game, name="quiz_game"),
@@ -16,6 +17,7 @@ urlpatterns = [
     path('quiz/end/', views.quiz_end, name="quiz_end"),
     
     path('retail/game/', views.retail_game, name="retail_game"),
+    
 ]
 
 
