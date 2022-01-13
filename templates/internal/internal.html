@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "internal/snippets/head.html" %}
+
+<body>
+    <style>
+        .dropdown-item:hover {
+                background-color: #6A3AC3;
+        }
+        .dropdown-item{
+            color: #E7E6E1;
+        }
+        .cool{
+            margin-left: 4rem;
+            
+        }
+    </style>
+
+    {% include "landing/snippets/nav.html" %}
+
+    
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-5 cool"><img class="img-fluid rounded mb-4 mb-lg-0 " src="https://leverageedu.com/blog/wp-content/uploads/2020/09/Internal-Trade.jpg" alt="..." /></div>
+        <div class="col-lg-6">
+            <h1 class="font-weight-light ">Internal Trade🛍</h1>
+            <p >This is the buying and selling of goods and services within the confined boundaries of the nation. Import and export do contribute to the nation’s GDP but the nation majorly contributed from the internal trade itself.   
+                The products being purchased from the neighbouring local shop or from a central market or from departmental shops or from malls or even from door-to-door selling all come under internal trade.</p>
+   
+        </div>
+    </div>
+ 
+
+     <!-- Section-->
+     <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5"  data-aos="fade-in" data-aos-duration="850">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+
+
+
+
+
+                <!-- CARD 1 -->
+
+                <div class="col mb-5" >
+                    <div class="card h-100">
+                        <!--image-->
+                        <img class="card-img-top" src="https://blog.bizvibe.com/wp-content/uploads/2020/04/wholesale-trade-industry-trends.jpg" alt="..." />
+                        <!--details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!--name-->
+                                <h6 class="fw-bolder">Wholesale Trade</h6>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >
+                            <div class="text-center">
+                                <!-- Large modal -->
+                                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target=".bd-example-modal-lg">View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Wholesale Trade</h5>
+                                  <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container px-4 px-lg-5">
+                                        <!-- Heading Row-->
+                                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://img.inddist.com/files/base/indm/multi/image/2021/09/16x9/Warehouse_44.613f5cc615b02.png?auto=format&fit=crop&h=394&w=700" alt="..." /></div>
+                                            <div class="col-lg-5">
+                                               
+                                                <p style="font-size: .9rem">Wholesale trade consists of purchasing and selling goods, generally to retailers, professional (industrial or commercial) users or authorities, or to other wholesalers or intermediaries, regardless of the quantities sold.
+                            
+                                                    Wholesale trade intermediaries put buyers and vendors into contact without being owners of the goods.</p>
+                                       
+                                            </div>
+                                        </div>
+                                     
+                                        <!-- Content Row-->
+                                        <div class="row gx-4 gx-lg-5">
+                                            <div class="col-md-6 mb-5">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Brief Explanation</h2>
+                                                        <p class="card-text">Play this short video to get a comprehensive overview of wholesale trade.</p>
+                                                    </div>
+                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'wholesale_video' %}">Play</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 mb-5">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Wholesale Trade Game</h2>
+                                                        <p class="card-text">Game on the services provided by wholesale traders.</p>
+                                                    </div>
+                                                    <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'quiz_game' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div> 
+
+
+
+
+                 <!-- CARD 2 -->
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/07/12/Photos/shopping_18--621x414.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h6 class="fw-bolder">Retail Trade</h6>
+                              
+                                
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <!-- Large modal -->
+                                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target=".bd-example-modal-lg-1">View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade bd-example-modal-lg-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Retail Trade</h5>
+                                  <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container px-4 px-lg-5">
+                                        <!-- Heading Row-->
+                                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" style="width: 500px; height: 200px;" src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/03/03/657263-grocery-store.jpg" alt="..." /></div>
+                                            <div class="col-lg-5">
+                                               
+                                                <p style="font-size: .95rem">Retail is the sale of goods and services to consumers, in contrast to wholesaling, which is sale to business or institutional customers. A retailer purchases goods in large quantities from manufacturers, directly or through a wholesaler, and then sells in smaller quantities to consumers for a profit.</p>
+                                       
+                                            </div>
+                                        </div>
+                                     
+                                        <!-- Content Row-->
+                                        <div class="row gx-4 gx-lg-5">
+                                            <div class="col-md-6 mb-5">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Types of Retailers</h2>
+                                                        <p class="card-text">Beyond the distinctions in the products they provide, there are structural differences among retailers that influence their strategies and results. One of the reasons the retail industry is so large and powerful is its diversity.</p>
+                                                    </div>
+                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'retail_video' %}">Play</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 mb-5">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Retail Trade Game</h2>
+                                                        <p class="card-text">A small trader refers to a market participant whose buying and selling activity is small enough for them to be exempt from certain regulatory requirements. It is often used to refer to traders or small financial firms, whose trading volumes are relatively low.</p>
+                                                    </div>
+                                                    <div class="card-footer "><a class="btn btn-primary  btn-sm" href="https://dreamy-fermat-41f36d.netlify.app/" style="background-color: #a17fdd; border: 0px;">Play</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+
+
+                 <!-- CARD 3 -->
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                      
+                        <!-- Product image-->
+                        <img  height="180" class="card-img-top" src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-122620,resizemode-1,msid-75214721/industry/services/retail/future-group-negotiates-rents-for-its-1700-stores.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h6 class="fw-bolder">Fixed Store Trade</h6>
+                              
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <!-- Large modal -->
+                                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target=".bd-example-modal-lg-2">View</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Fixed Store Trade</h5>
+                                  <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container px-4 px-lg-5">
+                                        <!-- Heading Row-->
+                                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://cdn.cnn.com/cnnnext/dam/assets/210930094346-macys-billboard-lawsuit-restricted-super-tease.jpg" alt="..." /></div>
+                                            <div class="col-lg-5">
+                                               
+                                                <p style="font-size: .95rem;">It is the second classification of retail Traders. The fixed shop's name itself explains that they do not move from one place to another. They can establish a medium or a large scale business in a fixed place. They run their transactions from there itself without any change. It also has several types in it.</p>
+                                       
+                                            </div>
+                                        </div>
+                                     
+                                       <!-- Content Row-->
+                                       <div class="row gx-4 gx-lg-5">
+                                       
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Departmental Store</h5>
+                                                    <p class="card-text">A department store is a retail establishment offering a wide range of consumer goods in different areas of the store, each area specializing in a product category.</p>
+                                                </div>
+                                                <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'department_store_video' %}">Play</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Chain Store Trade </h5>
+                                                    <p class="card-text">A chain store is a retail outlet in which several locations share a brand, central management, and standardized business practices.</p>
+                                                </div>
+                                                <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'vending_store_video' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-5">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Quiz (Fixed Store Trade)</h5>
+                                                    <p class="card-text">The term “integer” was adapted in Mathematics from Latin. Integer means intact or whole.</p>
+                                                </div>
+                                                <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'quiz_game' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
+                                            </div>
+                                        </div>
+                                       
+                                      
+
+                                    </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+               
+
+ 
+              
+    <!-- Bootstrap Js Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <!-- AOS script -->
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  
+      <!-- // -->
+
+</body>
+
+</html>

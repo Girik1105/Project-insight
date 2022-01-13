@@ -34,6 +34,8 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('resources/', views.resources, name="resources"),
     path('about/', views.about, name="about"),
+    path('internal/', views.internal, name="internal"),
+    path('external/', views.external, name="external")
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

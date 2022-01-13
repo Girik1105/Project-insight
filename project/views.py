@@ -11,3 +11,11 @@ def resources(request):
 def about(request):
     context = {}
     return render(request, 'about/about.html', context)
+
+def internal(request):
+    context = {}
+    return render(request, 'internal/internal.html', context)
+
+def external(request):
+    context = {}
+    return render(request, 'external/external.html', context)

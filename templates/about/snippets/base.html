@@ -2,9 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include 'landing/snippets/head.html' %}
+{% include 'about/snippets/head.html' %}
 
 <body>
+    <style>
+        .dropdown-item:hover {
+                background-color: #6A3AC3;
+        }
+        .dropdown-item{
+            color: #E7E6E1;
+        }
+    </style>
     {% include "landing/snippets/nav.html" %}
 
     {% block maincontent %}{% endblock maincontent %}
