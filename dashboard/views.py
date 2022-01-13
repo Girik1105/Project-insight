@@ -31,6 +31,11 @@ def vending_store_video(request):
     return render(request, 'internal/vending_store.html', context)
 
 @login_required
+def internal_trade_video(request):
+    context = {}
+    return render(request, 'internal/internal_trade.html', context)
+
+@login_required
 def quiz_index(request):
     context = {}
     return render(request, 'quiz_game/index.html', context)

@@ -9,6 +9,7 @@ urlpatterns = [
     path('wholesale/video/', views.wholesale_video, name="wholesale_video"),
     path('retail/video/', views.retail_video, name="retail_video"),
     path('vending/video/', views.vending_store_video, name="vending_store_video"),
+    path('internal_trade/video/', views.internal_trade_video, name="internal_trade_video"),
 
     path('quiz/', views.quiz_index, name="quiz_index"),
     path('quiz/game/', views.quiz_game, name="quiz_game"),
