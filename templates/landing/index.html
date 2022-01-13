@@ -15,8 +15,8 @@
               <h2 style="font-size: 1rem;">{% if user.is_authenticated %}“It is during our darkest moments that we must focus to see the light.” ~Aristotle{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
               
               {% if user.is_authenticated %}
-              <div><a href="{% url 'dashboard' %}" class="btn-get-started scrollto">Go back to Dashboard</a></div>
-              <div style="margin-bottom: 10%;"><a href="{% url 'account_logout' %}" class="btn-get-started scrollto">Log out</a></div>
+              <div><a href="{% url 'quiz_game' %}" class="btn-get-started scrollto">Play a Game</a></div>
+              <div style="margin-bottom: 10%;"><a href="{% url 'department_store_video' %}" class="btn-get-started scrollto" >Learn a Lesson</a></div>
               {% else %}
               <div style="margin-bottom: 10%;"><a href="{% url 'account_signup' %}" class="btn-get-started scrollto">Start</a></div>
               {% endif %}
