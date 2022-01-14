@@ -13,22 +13,27 @@ def dashboard(request):
 @login_required
 def department_store_video(request):
     context = {}
-    return render(request, 'dashboard/department_store.html', context)
+    return render(request, 'internal/department_store.html', context)
 
 @login_required
 def wholesale_video(request):
     context = {}
-    return render(request, 'dashboard/wholesale.html', context)
+    return render(request, 'internal/wholesale.html', context)
 
 @login_required
 def retail_video(request):
     context = {}
-    return render(request, 'dashboard/retail.html', context)
+    return render(request, 'internal/retail.html', context)
 
 @login_required
 def vending_store_video(request):
     context = {}
-    return render(request, 'dashboard/vending_store.html', context)
+    return render(request, 'internal/vending_store.html', context)
+
+@login_required
+def internal_trade_video(request):
+    context = {}
+    return render(request, 'internal/internal_trade.html', context)
 
 @login_required
 def quiz_index(request):

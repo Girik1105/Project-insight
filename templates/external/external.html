@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include "dashboard/snippets/head.html" %}
+{% include "external/snippets/head.html" %}
 
 <body>
     <style>
@@ -12,71 +12,24 @@
         .dropdown-item{
             color: #E7E6E1;
         }
-        .fine{
-            display: flex;
-            justify-content: flex-start;
+        .cool{
+            margin-left: 4rem;
+            
         }
-        .display-5{
-           position: relative;
-           left: -2.5rem;
-        }
-       
     </style>
 
     {% include "landing/snippets/nav.html" %}
 
     
-
-    <div class="container mt-5 mb-5">
-        <div class="row no-gutters">
-            <div class="col-md-4 col-lg-4" ><img  src="{{ user.profile.profile_picture.url }}"></div>
-            <div class="col-md-8 col-lg-8">
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">
-                        <h3 class="display-5">{% if user.profile.name %}{{ user.profile.name }}{% else %}Add a Name{% endif %}</h3><i class="fa fa-facebook"></i><i class="fa fa-google"></i><i class="fa fa-youtube-play"></i><i class="fa fa-dribbble"></i><i class="fa fa-linkedin"></i>
-                    </div>
-                    <div class="p-3 bg-black text-white">
-                        <h6 class="ml-3"><i class="fas fa-user-alt"  style="margin-right: .7rem;"></i>{% if user.profile.gender %}{{ user.profile.gender }}{% else %}Select Your Gender{% endif %}</h6>
-                        <h6 class="ml-3"> <i class="fas fa-map-marker-alt" style="margin-right: 1rem;"></i>{% if user.profile.location %}{{ user.profile.location }}{% else %}Add your location{% endif %}</h6>
-                        <h6 class="ml-3"> <i class="fas fa-birthday-cake" style="margin-right: .8rem;"></i>{% if user.profile.birth_date %}{{ user.profile.birth_date }}{% else %}Add your Birthday{% endif %}</h6>
-                    </div>
-                    <div class="fine">
-                        <div class="p-3 bg-danger  ">
-                            <a href="{% url 'edit-user-profile' %}"><button class="btn btn-outline-success">Edit</button></a>
-                       </div>
-                       <div class="p-3 bg-danger ">
-                        <a href="{% url 'account_logout' %}"><button class="btn btn-outline-danger">Logout</button></a>
-                    </div>
-
-                    </div>
-                    
-                    <div class="d-flex flex-row text-white">
-                        <div class="p-4 bg-primary text-center skill-block">
-                            <h4>90%</h4>
-                            <h6>Section 1</h6>
-                        </div>
-                        <div class="p-3 bg-success text-center skill-block">
-                            <h4>70%</h4>
-                            <h6>Section 2</h6>
-                        </div>
-                        <div class="p-3 bg-warning text-center skill-block">
-                            <h4>80%</h4>
-                            <h6>Section 3</h6>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-5 cool"><img class="img-fluid rounded mb-4 mb-lg-0 " src="https://i0.wp.com/www.globaltrademag.com/wp-content/uploads/2021/02/administration.png?fit=757%2C393&ssl=1" alt="..." /></div>
+        <div class="col-lg-6">
+            <h1 class="font-weight-light ">External Trade📦</h1>
+            <p >External trade is the exchange of capital, goods, and services across international borders or territories because there is a need or want of goods or services. In most countries, such trade represents a significant share of gross domestic product.</p>
+   
         </div>
     </div>
-
-
-    
-
-<<<<<<< HEAD
-    <h1 class="text-center">Study Material</h1>
-
-    <!-- SVG End-->
+ 
 
      <!-- Section-->
      <section class="py-5">
@@ -93,12 +46,12 @@
                 <div class="col mb-5" >
                     <div class="card h-100">
                         <!--image-->
-                        <img class="card-img-top" src="https://blog.bizvibe.com/wp-content/uploads/2020/04/wholesale-trade-industry-trends.jpg" alt="..." />
+                        <img class="card-img-top" src="https://www.india-briefing.com/news/wp-content/uploads/2019/08/Import-and-Export-Procedures-in-India.jpg" alt="..." />
                         <!--details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!--name-->
-                                <h6 class="fw-bolder">Wholesale Trade</h6>
+                                <h6 class="fw-bolder">Import Trade</h6>
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -113,7 +66,7 @@
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Wholesale Trade</h5>
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Import Trade</h5>
                                   <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -137,7 +90,7 @@
                                             <div class="col-md-6 mb-5">
                                                 <div class="card h-100">
                                                     <div class="card-body">
-                                                        <h4 class="card-title">Brief Explanation</h4>
+                                                        <h2 class="card-title">Brief Explanation</h2>
                                                         <p class="card-text">Play this short video to get a comprehensive overview of wholesale trade.</p>
                                                     </div>
                                                     <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'wholesale_video' %}">Play</a></div>
@@ -147,7 +100,7 @@
                                             <div class="col-md-6 mb-5">
                                                 <div class="card h-100">
                                                     <div class="card-body">
-                                                        <h4 class="card-title">Wholesale Trade Game</h4>
+                                                        <h2 class="card-title">Wholesale Trade Game</h2>
                                                         <p class="card-text">Game on the services provided by wholesale traders.</p>
                                                     </div>
                                                     <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'quiz_game' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
@@ -171,12 +124,12 @@
                     <div class="card h-100">
                         
                         <!-- Product image-->
-                        <img class="card-img-top" src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/07/12/Photos/shopping_18--621x414.jpg" alt="..." />
+                        <img class="card-img-top" src="https://res.cloudinary.com/ddfycftwg/image/upload/v1611591008/Blog-Cover-export-01-scaled_h4tspk.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h6 class="fw-bolder">Retail Trade</h6>
+                                <h6 class="fw-bolder">Export Trade</h6>
                               
                                 
                             </div>
@@ -193,7 +146,7 @@
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Retail Trade</h5>
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Export Trade</h5>
                                   <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -215,7 +168,7 @@
                                             <div class="col-md-6 mb-5">
                                                 <div class="card h-100">
                                                     <div class="card-body">
-                                                        <h2 class="card-title">services of Retailers</h2>
+                                                        <h2 class="card-title">Types of Retailers</h2>
                                                         <p class="card-text">Beyond the distinctions in the products they provide, there are structural differences among retailers that influence their strategies and results. One of the reasons the retail industry is so large and powerful is its diversity.</p>
                                                     </div>
                                                     <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'retail_video' %}">Play</a></div>
@@ -246,12 +199,12 @@
                     <div class="card h-100">
                       
                         <!-- Product image-->
-                        <img  height="180" class="card-img-top" src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-122620,resizemode-1,msid-75214721/industry/services/retail/future-group-negotiates-rents-for-its-1700-stores.jpg" alt="..." />
+                        <img  height="180" class="card-img-top" src="https://dinlankalogistics.com/wp-content/uploads/2020/11/interpot_t-768x461.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h6 class="fw-bolder">Fixed Store Trade</h6>
+                                <h6 class="fw-bolder">Entrepot Trade</h6>
                               
                             </div>
                         </div>
@@ -267,7 +220,7 @@
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Fixed Store Trade</h5>
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Entrepot Trade</h5>
                                   <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -276,7 +229,7 @@
                                     <div class="container px-4 px-lg-5">
                                         <!-- Heading Row-->
                                         <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://cdn.cnn.com/cnnnext/dam/assets/210930094346-macys-billboard-lawsuit-restricted-super-tease.jpg" alt="..." /></div>
+                                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dinlankalogistics.com/wp-content/uploads/2020/11/interpot_t-768x461.jpg" alt="..." /></div>
                                             <div class="col-lg-5">
                                                
                                                 <p style="font-size: .95rem;">It is the second classification of retail Traders. The fixed shop's name itself explains that they do not move from one place to another. They can establish a medium or a large scale business in a fixed place. They run their transactions from there itself without any change. It also has several types in it.</p>
@@ -293,27 +246,29 @@
                                                     <h5 class="card-title">Departmental Store</h5>
                                                     <p class="card-text">A department store is a retail establishment offering a wide range of consumer goods in different areas of the store, each area specializing in a product category.</p>
                                                 </div>
-                                                <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'department_store_video' %}">Play to know more→</a></div>
+                                                <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'department_store_video' %}">Play</a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-5">
                                             <div class="card h-100">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Chain Store Trade </h5>
-                                                    <p class="card-text">A chain store is a retail outlet in which several locations share a brand, central management, and standardized business practices. </p>
+                                                    <p class="card-text">A chain store is a retail outlet in which several locations share a brand, central management, and standardized business practices.</p>
                                                 </div>
-                                                <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'vending_store_video' %}" style="background-color: #a17fdd; border: 0px;">Play to know more→</a></div>
+                                                <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'vending_store_video' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 mb-5">
+                                        <div class="col-md-12 mb-5">
                                             <div class="card h-100">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Game</h5>
+                                                    <h5 class="card-title">Quiz (Fixed Store Trade)</h5>
                                                     <p class="card-text">The term “integer” was adapted in Mathematics from Latin. Integer means intact or whole.</p>
                                                 </div>
                                                 <div class="card-footer "><a class="btn btn-primary  btn-sm" href="{% url 'quiz_game' %}" style="background-color: #a17fdd; border: 0px;">Play</a></div>
                                             </div>
                                         </div>
+                                       
+                                      
 
                                     </div>
                                     </div>
@@ -323,72 +278,6 @@
                       </div>
                 </div>
 
-                 <!-- CARD 4 -->
-
-                 <div class="col mb-5">
-                    <div class="card h-100">
-                      
-                        <!-- Product image-->
-                        <img  height="180" class="card-img-top" src="https://leverageedu.com/blog/wp-content/uploads/2020/09/Internal-Trade.jpg" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h6 class="fw-bolder">Internal Trade Overview</h6>
-                              
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center">
-                                <!-- Large modal -->
-                                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target=".bd-example-modal-lg-212">View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade bd-example-modal-lg-212" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Internal Trade Overview</h5>
-                                  <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container px-4 px-lg-5">
-                                        <!-- Heading Row-->
-                                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://economictimes.indiatimes.com/blogs/wp-content/uploads/2017/02/GST-7.png" alt="..." /></div>
-                                            <div class="col-lg-5">
-                                               
-                                                <p style="font-size: .95rem;">Internal Trade Overview</p>
-                                       
-                                            </div>
-                                        </div>
-                                     
-                                       <!-- Content Row-->
-                                       <div class="row gx-4 gx-lg-5">
-                                       
-                                        <div class="col-md-6 mb-5">
-                                            <div class="card h-100">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Play Video</h5>
-                                                    <p class="card-text"></p>
-                                                </div>
-                                                <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'video_video' %}">Play</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-5">
- 
-                                        
-                                    </div>
-                                    </div>
-                                </div>
-                              </div>
-                        </div>
-                      </div>
-                </div>
 
 
 
@@ -396,8 +285,6 @@
         </div>
                
 
-=======
->>>>>>> 9ea1c7664c7c41f30fefac5c13b1ee1d1ba81124
  
               
     <!-- Bootstrap Js Script -->

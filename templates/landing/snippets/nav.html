@@ -3,34 +3,46 @@
         <div class="container-fluid">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_dT1E1P.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
-          <a class="navbar-brand" href="{% url 'index' %}">Insight.</a>
+          <a class="navbar-brand" href="{% url 'index' %}" style="margin-top: 3rem;">Insight.</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ms-auto">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="{% url 'index' %}">Home</a>
+                <a class="nav-link " aria-current="page" href="{% url 'index' %}" style="margin-top: 5rem;">Home</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{% url 'about' %}">Explore</a>
+                <a class="nav-link" aria-current="page" href="{% url 'about' %}" style="margin-top: 5rem;">Explore</a>
               </li>
 
               {% if user.is_authenticated %}
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'resources' %}">Resources</a>
-              </li>
+           
               
+              <div class="dropdown">
+                <a class=" dropdown-toggle nav-link" href="{% url 'internal' %}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 5rem;">
+                 Concepts
+                </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: #6A3AC3;">
+                  <a class="dropdown-item" href="{% url 'internal' %}">Internal Trade</a>
+                  <hr>
+                  <a class="dropdown-item" href="{% url 'external' %}">External Trade</a>
+                  <hr>
+                  <a class="dropdown-item" href="{% url 'resources' %}">Resources</a>
+                  
+              </div>
+              </div>
+
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{% url 'account_logout' %}">Sign Out</a>
+                <a class="nav-link" href="{% url 'dashboard' %}"><img style=" border: grey 2px solid; width: 3.5rem; height: 3.5rem;border-radius: 50%; position: relative; top: 1.2rem;" src="{{ user.profile.profile_picture.url }}" alt="">
+                
+                <div style="border: grey .5px solid; height: .6rem; width: .6rem; background-color: #06FF00; position: relative; border-radius: 50%; bottom: -0.2rem;  "></div>
+                </a>
               </li>
               {% else %}
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{% url 'account_login' %}">Login</a>
+                <a class="nav-link" aria-current="page" href="{% url 'account_login' %}" style="margin-top: 5rem;">Login</a>
               </li>
               {% endif %}
             </ul>
