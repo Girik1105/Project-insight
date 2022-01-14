@@ -66,6 +66,56 @@ let questions = [
             return this.choice2
         }
     }, 
+    {
+        question: "1.   Identify the service of wholesaler which relieves the retailers of the work of collecting goods from several producers and keeping big inventory of the same?",
+        choice1: "Available of goods",
+        choice2: "Market support",
+        choice3: "Grant of credit",
+        choice4: "Risk Sharing",
+        answer: function () {
+            return this.choice1
+        }
+    },
+    {
+        question: "'Wholesaler takes care of stock from fall in prices, theft, pilferage, spoilage, fire, etc.' Identify the service he is providing to manufacturer?",
+        choice1: "Facilitating large scale production",
+        choice2: "Bearing of risk",
+        choice3: "provide financial assistance",
+        choice4: "Expert Advise",
+        answer: function () {
+            return this.choice2
+        }
+    }, 
+    {
+        question: "3.   Wholesalers enables retailers to manage their business with relatively small amount of working capital. How they do so?",
+        choice1: "Marketing support",
+        choice2: "specialised knowledge",
+        choice3: "Grant of credit",
+        choice4: "risk sharing",
+        answer: function () {
+            return this.choice3
+        },
+    },   
+    {
+        question: "Wholesaler purchases goods as and when these are produced and store them till the time these are demanded by retailers or consumers in the market. Choose the service mentioned here?",
+        choice1: "Facilitating production continuity",
+        choice2: "Bearing risk",
+        choice3: "Financial Assistance",
+        choice4: "Expert Advise",
+        answer: function () {
+            return this.choice1
+        }
+    }, 
+    {
+        question: "Wholesalers inform the retailers about the new products, their uses, quality, prices, etc. Identify the service provided by them?",
+        choice1: "Marketing support",
+        choice2: "grant of credit",
+        choice3: "Specialised knowledge",
+        choice4: "risk Sharing",
+        answer: function () {
+            return this.choice3
+        }
+    }, 
 ];
 
 const scorePoints = 100;

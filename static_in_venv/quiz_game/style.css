@@ -138,3 +138,21 @@ input::placeholder {
     position:absolute;
     display:none;
 }
+
+.m-5 {
+    margin-bottom: 150px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+#end {
+    display: flex;
+    align-items: center;
+}
+
+#question {
+    font-size: 3rem;
+}

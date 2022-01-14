@@ -23,7 +23,7 @@ saveHighScore = e => {
     console.log(score);
 
     localStorage.setItem('highScores', JSON.stringify(score));
-    window.location.assign('index.html');
+    window.location.assign('/');
 
     highScores.push(score);
 
