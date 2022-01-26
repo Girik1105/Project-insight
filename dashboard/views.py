@@ -36,6 +36,46 @@ def internal_trade_video(request):
     return render(request, 'internal/internal_trade.html', context)
 
 @login_required
+def ep1_video(request):
+    context = {}
+    return render(request, 'external/ep1.html', context)
+
+@login_required
+def ep2_video(request):
+    context = {}
+    return render(request, 'external/ep2.html', context)
+
+@login_required
+def ep3_video(request):
+    context = {}
+    return render(request, 'external/ep3.html', context)
+
+@login_required
+def ep4_video(request):
+    context = {}
+    return render(request, 'external/ep4.html', context)
+
+@login_required
+def ep5_video(request):
+    context = {}
+    return render(request, 'external/ep5.html', context)
+
+@login_required
+def ep6_video(request):
+    context = {}
+    return render(request, 'external/ep6.html', context)
+
+@login_required
+def ep7_video(request):
+    context = {}
+    return render(request, 'external/ep7.html', context)
+
+@login_required
+def ep8_video(request):
+    context = {}
+    return render(request, 'external/ep8.html', context)
+
+@login_required
 def quiz_index(request):
     context = {}
     return render(request, 'quiz_game/index.html', context)
