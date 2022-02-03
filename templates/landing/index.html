@@ -9,10 +9,11 @@
         <div class="container-fluid" >
           <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-in" data-aos-delay="650">
-              <h1>
+              <h1 style="font-size: 2.5rem;">
                 {% if user.is_authenticated %}Welcome back @{{ user.username }}! {% else %}Welcome to Lesson Internal Trade{% endif %}
               </h1>
-              <h2 style="font-size: 1rem;">{% if user.is_authenticated %}“It is during our darkest moments that we must focus to see the light.” ~Aristotle{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
+              <h2 style="font-weight: 800; font-size: 1rem;" id="quote">{% if user.is_authenticated %}Quote{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</h2>
+              <p style="font-weight: 400; font-size: 1rem; color: #f3f3f3; margin-top: 1rem;" id="author">{% if user.is_authenticated %}Author{% else %}A platform to educate the upcoming youth about the aspects of Trading.{% endif %}</p>
               
               {% if user.is_authenticated %}
               <div><a href="{% url 'quiz_game' %}" class="btn-get-started scrollto" >Play a Game</a></div>
@@ -31,6 +32,7 @@
       </section>
       <!-- End Hero -->
     
-      <main id="main">    
+          <!-- Quote script -->
+    <script src="{% static 'landing/index.js' %}"></script>  
 
 {% endblock maincontent %}
