@@ -67,6 +67,16 @@ let questions = [
         }
     }, 
     {
+        question: "Why are multiple locations advantageous to a chain store?",
+        choice1: "They're not.",
+        choice2: "They permit bulk buying of products.",
+        choice3: "They make management easier.",
+        choice4: "They help capture more market share.",
+        answer: function () {
+            return this.choice4
+        }
+    }, 
+    {
         question: "Identify the service of wholesaler which relieves the retailers of the work of collecting goods from several producers and keeping big inventory of the same?",
         choice1: "Available of goods",
         choice2: "Market support",
@@ -111,11 +121,111 @@ let questions = [
         choice1: "Marketing support",
         choice2: "grant of credit",
         choice3: "Specialised knowledge",
-        choice4: "risk Sharing",
+        choice4: "Risk Sharing",
         answer: function () {
             return this.choice3
         }
-    }, 
+    },
+    {
+        question: "Identify the service offered by retailer to the wholesaler:",
+        choice1: "Specialised knowledge",
+        choice2: "Personal selling",
+        choice3: "Credit facility",
+        choice4: "Economies of scale",
+        answer: function () {
+            return this.choice2
+        }
+    },
+    {
+        question: "Which type of service is not offered by retailers to manufacturers and wholesalers?",
+        choice1: "New product information",
+        choice2: "Personal selling",
+        choice3: "Helps in promotion",
+        choice4: "Helps in distribution of goods",
+        answer: function () {
+            return this.choice1
+        }
+    },
+    {
+        question: "Identify the services of the retailer to wholesaler which states that he makes all types of commodities available to consumers in one place.",
+        choice1: "Convenience in buying",
+        choice2: "Home delivery",
+        choice3: "New product information",
+        choice4: "Regular availability of products",
+        answer: function () {
+            return this.choice4
+        }
+    },
+    {
+        question: "Which of these is not a service of retailer towards manufacturer, wholesaler or consumer?",
+        choice1: "Convenience in buying",
+        choice2: "Risk sharing",
+        choice3: "New product information",
+        choice4: "Regular availability of products",
+        answer: function () {
+            return this.choice2
+        }
+    },
+    {
+        question: " Arrangement for the supply of goods at the customer’s doorstep is done without any extra charges. Identify the above-mentioned service of the retailer.",
+        choice1: "Personal Selling",
+        choice2: "Economies of scale",
+        choice3: "Home delivery",
+        choice4: "Wide selection",
+        answer: function () {
+            return this.choice3
+        }
+    },
+    {
+        question: "They satisfy diverse market segments with a wide variety of goods and services under one roof.” The quoted sentence is in reference to:",
+        choice1: "Chain Store",
+        choice2: "Departmental Store",
+        choice3: "Itinerant retailer",
+        choice4: "Speciality shops",
+        answer: function () {
+            return this.choice2
+        }
+    },
+    {
+        question: "Identify the advantage of Departmental Store which states that considerable amount of money on advertising and other promotional activities is spent for all the departments.",
+        choice1: "Economy of large scale production",
+        choice2: "Promotion of sales",
+        choice3: "Attractive services",
+        choice4: "Attracts large number of customers",
+        answer: function () {
+            return this.choice2
+        }
+    },
+    {
+        question: "Identify the limitation of Departmental Store which is a result of high operating costs and large-scale operations.",
+        choice1: "Lack of personal attention",
+        choice2: "High operating cost",
+        choice3: "High possibility of loss",
+        choice4: "Lack of initiative",
+        answer: function () {
+            return this.choice3
+        }
+    },
+    {
+        question: " Which statement about department stores is not correct? ",
+        choice1: "Department stores offer the greatest selection of any general merchandise retailer. ",
+        choice2: "Department stores provides different services to customers.",
+        choice3: "Department stores are usually part of a chain. ",
+        choice4: "Department stores use centralized buying for all departments.",
+        answer: function () {
+            return this.choice3
+        }
+    },
+    {
+        question: " Which of the following is not the feature of Departmental Store? ",
+        choice1: "All items under one roof. ",
+        choice2: "Centrally located.",
+        choice3: "Located in populous localities.",
+        choice4: "Combines both the functions of Retailing as well as Warehousing.",
+        answer: function () {
+            return this.choice3
+        }
+    },
 ];
 
 const scorePoints = 100;
