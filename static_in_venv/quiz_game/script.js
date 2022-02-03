@@ -7,8 +7,12 @@ const correctAnswerDisplay = document.querySelector('.correct-answer-display');
 const correctAnswerDisplayVideo = document.querySelector('#video-item');
 
 
+
 console.log(choices);
 
+
+let correct_audio = new Audio('correct.mp3');
+let wrong_audio = new Audio('wrong.mp3');
 let currentQuestion = {};
 let acceptAnswers = true;
 let score = 0;
@@ -276,6 +280,8 @@ choices.forEach(choice => {
 
             selectedChoice.parentElement.classList.add(classToApply)
 
+            correct_audio.play()
+
             setTimeout(() => {
                 selectedChoice.parentElement.classList.remove(classToApply);
                 getNewQuestion();
@@ -287,6 +293,8 @@ choices.forEach(choice => {
 
             correctAnswerDisplay.innerText = `CORRECT ANSWER: ${currentQuestion.answer()}`;
             correctAnswerDisplayVideo.classList.toggle('d-none');
+
+            wrong_audio.play()
             
             setTimeout(() => {
                 correctAnswerDisplay.innerText = "";
@@ -312,6 +320,9 @@ function startGame () {
     availableQuestions = [...questions]; // Spreading array with ...
     scoreText.innerText = `${score}/${100*maxQuestions}`;
     getNewQuestion();
+    
 }
+
+
 
 startGame();
