@@ -186,16 +186,7 @@ let questions = [
             return this.choice2
         }
     },
-    {
-        question: "Identify the advantage of Departmental Store which states that considerable amount of money on advertising and other promotional activities is spent for all the departments.",
-        choice1: "Economy of large scale production",
-        choice2: "Promotion of sales",
-        choice3: "Attractive services",
-        choice4: "Attracts large number of customers",
-        answer: function () {
-            return this.choice2
-        }
-    },
+  
     {
         question: "Identify the limitation of Departmental Store which is a result of high operating costs and large-scale operations.",
         choice1: "Lack of personal attention",
