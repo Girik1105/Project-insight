@@ -14,12 +14,14 @@
 <body>
     <div class="container">
         <div id="highscores" class="flex-center flex-column">
-            <h1 id="finalScore">Leaderboard</h1>
+            <h1 id="finalScore" style="background: linear-gradient(90deg, #FFEEAD , #FFF89A); border-radius: 10px; padding: 1rem; margin: 0 auto;">Leaderboard</h1>
 
-            <ul id="highScoresList">
+            <ul id="highScoresList" style="background-color: #519259 ; border-radius: 10px;">
             </ul>
-
-            <a href="{% url 'quiz_index' %}" class="btn">Back to Home</a>
+            <center style="margin: 20rem;width: 30rem;">
+                <a href="{% url 'quiz_index' %}" style="margin: 0 auto; padding: 2rem;"  class="btn">Back to Home</a>
+            </center>
+            
 
         </div>
     </div>
