@@ -67,7 +67,7 @@ let questions = [
         }
     }, 
     {
-        question: "1.   Identify the service of wholesaler which relieves the retailers of the work of collecting goods from several producers and keeping big inventory of the same?",
+        question: "Identify the service of wholesaler which relieves the retailers of the work of collecting goods from several producers and keeping big inventory of the same?",
         choice1: "Available of goods",
         choice2: "Market support",
         choice3: "Grant of credit",
@@ -87,7 +87,7 @@ let questions = [
         }
     }, 
     {
-        question: "3.   Wholesalers enables retailers to manage their business with relatively small amount of working capital. How they do so?",
+        question: "Wholesalers enables retailers to manage their business with relatively small amount of working capital. How they do so?",
         choice1: "Marketing support",
         choice2: "specialised knowledge",
         choice3: "Grant of credit",
