@@ -83,7 +83,7 @@ def quiz_index(request):
 @login_required
 def quiz_game(request):
     context = {}
-    return render(request, 'quiz_game/index.html', context)
+    return render(request, 'quiz_game/game.html', context)
 
 @login_required
 def quiz_highscores(request):
