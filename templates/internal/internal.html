@@ -41,34 +41,77 @@
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
 
-                <!-- CARD 1 -->
+     
 
-                <div class="col mb-5">
+                <!-- Card 1 -->
+                <div class="col mb-5" >
                     <div class="card h-100">
-                        
-                        <!-- Product image-->
+                        <!--image-->
                         <img class="card-img-top" src="https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80" alt="..." />
-                        <!-- Product details-->
+                        <!--details-->
                         <div class="card-body p-4">
                             <div class="text-center">
-                                <!-- Product name-->
-                                <h6 class="fw-bolder">Game</h6>
-                              
-                                
+                                <!--name-->
+                                <h6 class="fw-bolder">Internal Trade Games</h6>
                             </div>
                         </div>
                         <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >
                             <div class="text-center">
                                 <!-- Large modal -->
-                                <a href="{% url 'quiz_game' %}"><button type="button" class="btn btn-outline-dark">Play</button></a>
+                                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target=".bd-example-modal-lg-0">View</button>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-
+                    <div class="modal fade bd-example-modal-lg-0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Games 🎮</h5>
+                                  <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container px-4 px-lg-5">
+                                        <!-- Heading Row-->
+                                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                                            <div class="col-lg-7 "><img class="img-fluid rounded mb-4 mb-lg-0" src="https://media.istockphoto.com/photos/text-game-time-spelled-out-in-wooden-letter-surrounded-by-dice-other-picture-id1306464121?b=1&k=20&m=1306464121&s=170667a&w=0&h=ZTxUnnccu9u86lWO9TosJ_M13rp9vDHDBwXU6v-jAb0=" alt="..." /></div>
+                                            <div class="col-lg-5">
+                                               
+                                                <p style="font-size: .9rem"> A game is an activity that is designed for a purpose. The purpose of these games is to educate you about the complex and intricate topics of internal trade in a fun and intuitive way.</p>
+                                       
+                                            </div>
+                                        </div>
+                                     
+                                        <!-- Content Row-->
+                                        <div class="row gx-4 gx-lg-5">
+                                            <div class="col-md-6 mb-5 ">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title ">Kaun Banega Trade Expert 💸</h5>
+                                                        <p class="card-text" style="margin-top: 2rem;"> A quiz that is solely created to cater you about the concepts of Wholesale store, Chain stores etc. Each point you get, higher the position you achieve on the leaderboard. </p>
+                                                    </div>
+                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'quiz_game' %}">Play</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-5 ">
+                                                <div class="card h-100">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title ">The Trade Barrier 🕹</h5>
+                                                        <p class="card-text" style="margin-top: 2rem;"> Trippy is stuck, help him cross obstacles and reach his destination by solving a variety of complex quests.</p>
+                                                    </div>
+                                                    <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="https://dreamy-fermat-41f36d.netlify.app/">Play</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                </div> 
 
 
 
@@ -109,7 +152,7 @@
                                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://img.inddist.com/files/base/indm/multi/image/2021/09/16x9/Warehouse_44.613f5cc615b02.png?auto=format&fit=crop&h=394&w=700" alt="..." /></div>
                                             <div class="col-lg-5">
                                                
-                                                <p style="font-size: .9rem">Wholesale trade consists of purchasing and selling goods, generally to retailers, professional (industrial or commercial) users or authorities, or to other wholesalers or intermediaries, in large quantities.
+                                                <p style="font-size: .9rem">Wholesale trade consists of purchasing and selling goods, generally to retailers, professional users or authorities, or to other wholesalers or intermediaries, in large quantities.
                             
                                                     Wholesale trade intermediaries put buyers and vendors into contact without being owners of the goods.</p>
                                        
@@ -185,7 +228,7 @@
                                      
                                         <!-- Content Row-->
                                         <div class="row gx-4 gx-lg-5">
-                                            <div class="col-md-6 mb-5">
+                                            <div class="col-md-12 mb-5">
                                                 <div class="card h-100">
                                                     <div class="card-body">
                                                         <h2 class="card-title">Services of Retailers</h2>
@@ -195,15 +238,7 @@
                                                 </div>
                                             </div>
                                             
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Retail Trade Game</h2>
-                                                        <p class="card-text">A small trader refers to a market participant whose buying and selling activity is small enough for them to be exempt from certain regulatory requirements. It is often used to refer to traders or small financial firms, whose trading volumes are relatively low.</p>
-                                                    </div>
-                                                    <div class="card-footer "><a class="btn btn-primary  btn-sm" href="https://dreamy-fermat-41f36d.netlify.app/" style="background-color: #a17fdd; border: 0px;">Play</a></div>
-                                                </div>
-                                            </div>
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +287,7 @@
                                             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://cdn.cnn.com/cnnnext/dam/assets/210930094346-macys-billboard-lawsuit-restricted-super-tease.jpg" alt="..." /></div>
                                             <div class="col-lg-5">
                                                
-                                                <p style="font-size: .95rem;">The fixed shop's name itself explains that they do not move from one place to another. They can establish a medium or a large scale business in a fixed place. They do not move from place to place to serve their customers.</p>
+                                                <p style="font-size: .95rem;">The name itself explains that they do not move from one place to another. They can establish a medium or a large scale business in a fixed place. They do not move from place to place to serve their customers.</p>
                                        
                                             </div>
                                         </div>
