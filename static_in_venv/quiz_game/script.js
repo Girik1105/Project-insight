@@ -21,7 +21,7 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: "How does centralized procurement of goods beneficial for chain store?",
+        question: "How is centralized procurement of goods beneficial for chain store?",
         choice1: "Offer economies of scale",
         choice2: "Hiring good managers. ",
         choice3: "Flexibility",
@@ -31,7 +31,7 @@ let questions = [
         }
     },
     {
-        question: "Identify the limitation of Chain store which explains that managing the multiple shops have to obey the instructions received from the head office",
+        question: "Identify the limitation of Chain store which explains that managing the multiple shops have to obey the instructions received from the head office.",
         choice1: "Lack of Personal touch",
         choice2: "Difficult to change demand",
         choice3: "Limited Selection of goods",
@@ -41,7 +41,7 @@ let questions = [
         }
     }, 
     {
-        question: "Identify the WRONG advantage of chain store:",
+        question: "Identify the WRONG advantage of chain store.",
         choice1: "Transfer of Goods",
         choice2: "Elimination of middlemen",
         choice3: "Limited Variety of goods",
@@ -51,7 +51,7 @@ let questions = [
         },
     },   
     {
-        question: "Identify the advantages of Chain store which explains that the losses incurred by one shop may be covered by profits in other shops",
+        question: "Identify the advantages of Chain store which explains that the losses incurred by one shop may be covered by profits in other shops.",
         choice1: "Low Cost",
         choice2: "Diffusion of Risk",
         choice3: "Flexibility",
@@ -81,7 +81,7 @@ let questions = [
         }
     }, 
     {
-        question: "Identify the service of wholesaler which relieves the retailers of the work of collecting goods from several producers and keeping big inventory of the same?",
+        question: "Identify the service of wholesaler which relieves the retailers of the work of collecting goods from several producers and keeping big inventory of the same.",
         choice1: "Available of goods",
         choice2: "Market support",
         choice3: "Grant of credit",
@@ -91,7 +91,7 @@ let questions = [
         }
     },
     {
-        question: "'Wholesaler takes care of stock from fall in prices, theft, pilferage, spoilage, fire, etc.' Identify the service he is providing to manufacturer?",
+        question: "'Wholesaler takes care of stock from fall in prices, theft, pilferage, spoilage, fire, etc.' Identify the service he is providing to manufacturer.",
         choice1: "Facilitating large scale production",
         choice2: "Bearing of risk",
         choice3: "provide financial assistance",
@@ -131,7 +131,7 @@ let questions = [
         }
     },
     {
-        question: "Identify the service offered by retailer to the wholesaler:",
+        question: "Identify the service offered by retailer to the wholesaler.",
         choice1: "Specialised knowledge",
         choice2: "Personal selling",
         choice3: "Credit facility",
@@ -155,7 +155,7 @@ let questions = [
         choice1: "Convenience in buying",
         choice2: "Home delivery",
         choice3: "New product information",
-        choice4: "Regular availability of products",
+        choice4: "Helps in distribution of goods",
         answer: function () {
             return this.choice4
         }
@@ -171,7 +171,7 @@ let questions = [
         }
     },
     {
-        question: " Arrangement for the supply of goods at the customer’s doorstep is done without any extra charges. Identify the above-mentioned service of the retailer.",
+        question: " Arrangement for the supply of goods at the customer's doorstep is done without any extra charges. Identify the above-mentioned service of the retailer.",
         choice1: "Personal Selling",
         choice2: "Economies of scale",
         choice3: "Home delivery",
@@ -181,7 +181,7 @@ let questions = [
         }
     },
     {
-        question: "They satisfy diverse market segments with a wide variety of goods and services under one roof.” The quoted sentence is in reference to:",
+        question: "They satisfy diverse market segments with a wide variety of goods and services under one roof.” The quoted sentence is in reference to.",
         choice1: "Chain Store",
         choice2: "Departmental Store",
         choice3: "Itinerant retailer",
@@ -202,10 +202,10 @@ let questions = [
         }
     },
     {
-        question: " Which statement about department stores is not correct? ",
-        choice1: "Department stores offer the greatest selection of any general merchandise retailer. ",
+        question: "Which statement about department stores is not correct?",
+        choice1: "Department stores offer the greatest selection of any general merchandise retailer.",
         choice2: "Department stores provides different services to customers.",
-        choice3: "Department stores are usually part of a chain. ",
+        choice3: "Department stores are usually part of a chain.",
         choice4: "Department stores use centralized buying for all departments.",
         answer: function () {
             return this.choice3
