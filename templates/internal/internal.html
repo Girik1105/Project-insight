@@ -28,8 +28,9 @@
             <h1 class="font-weight-light ">Internal Trade🛍</h1>
             <p >This is the buying and selling of goods and services within the confined boundaries of the nation.
                 The products being purchased from the neighbouring local shop or from a central market or from departmental shops or from malls or even from door-to-door selling all come under internal trade. 
+                <br>
                 <br>For learning enrichment, click on the following link:</p>
-                <div><a class="btn btn-primary  btn-sm" href="{% url 'internal_trade_video' %}" style="background-color: #a17fdd; border: 0px;">Internal Trade Concept</a></div>
+                <div><a class="btn btn-outline-light  btn-sm" href="{% url 'internal_trade_video' %}" style="background-color: #a17fdd; border: 0px;">Concept Video</a></div>
         </div>
     </div>
  
@@ -40,11 +41,38 @@
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
 
-
-
-
-
                 <!-- CARD 1 -->
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h6 class="fw-bolder">Game</h6>
+                              
+                                
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <!-- Large modal -->
+                                <a href="{% url 'quiz_game' %}"><button type="button" class="btn btn-outline-dark">Play</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- CARD 2 -->
 
                 <div class="col mb-5" >
                     <div class="card h-100">
@@ -90,10 +118,10 @@
                                      
                                         <!-- Content Row-->
                                         <div class="row gx-4 gx-lg-5">
-                                            <div class="col-md-6 mb-5">
+                                            <div class="col-md-12 mb-5 ">
                                                 <div class="card h-100">
                                                     <div class="card-body">
-                                                        <h2 class="card-title">Services of Wholesalers</h2>
+                                                        <h2 class="card-title ">Services of Wholesalers</h2>
                                                         <p class="card-text">Wholesalers provide various services to manufacturers and retailers. They provide immense help in the distribution of goods and services. <br>Play this short video to get a comprehensive overview of wholesale trade.</p>
                                                     </div>
                                                     <div class="card-footer"><a class="btn btn-primary btn-sm" style="background-color: #a17fdd; border: 0px;" href="{% url 'wholesale_video' %}">Play</a></div>
@@ -110,7 +138,7 @@
 
 
 
-                 <!-- CARD 2 -->
+                 <!-- CARD 3 -->
 
                 <div class="col mb-5">
                     <div class="card h-100">
@@ -185,7 +213,7 @@
                 </div>
 
 
-                 <!-- CARD 3 -->
+                 <!-- CARD 4 -->
 
                 <div class="col mb-5">
                     <div class="card h-100">
@@ -262,31 +290,7 @@
                       </div>
                 
 
-                <!-- CARD 4 -->
-
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        
-                        <!-- Product image-->
-                        <img class="card-img-top" src="https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h6 class="fw-bolder">Internal Trade (Game)</h6>
-                              
-                                
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center">
-                                <!-- Large modal -->
-                                <a href="{% url 'quiz_game' %}"><button type="button" class="btn btn-outline-dark">PLay</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
 
