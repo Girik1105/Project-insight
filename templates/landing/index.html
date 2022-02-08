@@ -16,7 +16,7 @@
               <p style="font-weight: 400; font-size: 1rem; color: #f3f3f3; margin-top: 1rem;" id="author">{% if user.is_authenticated %}Author{% endif %}</p>
               
               {% if user.is_authenticated %}
-              <div><a href="{% url 'quiz_game' %}" class="btn-get-started scrollto" >Play a Game</a></div>
+              <div><a href="{% url 'quiz_index' %}" class="btn-get-started scrollto" >Play a Game</a></div>
               <div style="margin-bottom: 10%;"><a href="{% url 'department_store_video' %}" class="btn-get-started scrollto">Learn a Lesson</a></div>
               {% else %}
               <div style="margin-bottom: 10%;"><a href="{% url 'account_signup' %}" class="btn-get-started scrollto">Start</a></div>
