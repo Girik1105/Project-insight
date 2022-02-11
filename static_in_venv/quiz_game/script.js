@@ -4,12 +4,11 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 const correctAnswerDisplay = document.querySelector('.correct-answer-display');
-const correctAnswerDisplayVideo = document.querySelector('#video-item');
 
-
-
-console.log(choices);
-
+const correctAnswerDisplayVideo1 = document.querySelector('#video-item-1');
+const correctAnswerDisplayVideo2 = document.querySelector('#video-item-2');
+const correctAnswerDisplayVideo3 = document.querySelector('#video-item-3');
+const correctAnswerDisplayVideo4 = document.querySelector('#video-item-4');
 
 let correct_audio = new Audio('correct.mp3');
 let wrong_audio = new Audio('wrong.mp3');
@@ -18,6 +17,13 @@ let acceptAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let currentVideo = 0;
+
+// video1 = chain store 
+// video2 = departmental
+// video3 = retail
+// video4 = wholesale
+
 
 let questions = [
     {
@@ -28,7 +34,8 @@ let questions = [
         choice4: "Diffusuion of Risk",
         answer: function () {
             return this.choice1
-        }
+        },
+        video: 1
     },
     {
         question: "Identify the limitation of Chain store which explains that managing the multiple shops have to obey the instructions received from the head office.",
@@ -38,7 +45,8 @@ let questions = [
         choice4: "Lack of Initiative",
         answer: function () {
             return this.choice4
-        }
+        },
+        video: 1
     }, 
     {
         question: "Identify the WRONG advantage of chain store.",
@@ -49,16 +57,18 @@ let questions = [
         answer: function () {
             return this.choice3
         },
+        video: 1
     },   
     {
-        question: "Identify the advantages of Chain store which explains that the losses incurred by one shop may be covered by profits in other shops.",
+        question: "Identify the advantage of Chain store which explains that the losses incurred by one shop may be covered by profits in other shops.",
         choice1: "Low Cost",
         choice2: "Diffusion of Risk",
         choice3: "Flexibility",
         choice4: "No bad debts",
         answer: function () {
             return this.choice2
-        }
+        },
+        video: 1
     }, 
     {
         question: "Which of these is not a feature of Chain store?",
@@ -68,7 +78,8 @@ let questions = [
         choice4: "Centrally Controlled by Head Office",
         answer: function () {
             return this.choice2
-        }
+        },
+        video: 1
     }, 
     {
         question: "Why are multiple locations advantageous to a chain store?",
@@ -78,7 +89,8 @@ let questions = [
         choice4: "They help capture more market share.",
         answer: function () {
             return this.choice4
-        }
+        },
+        video: 1
     }, 
     {
         question: "Identify the service of wholesaler which relieves the retailers of the work of collecting goods from several producers and keeping big inventory of the same.",
@@ -88,7 +100,8 @@ let questions = [
         choice4: "Risk Sharing",
         answer: function () {
             return this.choice1
-        }
+        },
+        video: 4
     },
     {
         question: "'Wholesaler takes care of stock from fall in prices, theft, pilferage, spoilage, fire, etc.' Identify the service he is providing to manufacturer.",
@@ -98,7 +111,8 @@ let questions = [
         choice4: "Expert Advise",
         answer: function () {
             return this.choice2
-        }
+        },
+        video: 4
     }, 
     {
         question: "Wholesalers enables retailers to manage their business with relatively small amount of working capital. How they do so?",
@@ -109,6 +123,7 @@ let questions = [
         answer: function () {
             return this.choice3
         },
+        video: 4
     },   
     {
         question: "Wholesaler purchases goods as and when these are produced and store them till the time these are demanded by retailers or consumers in the market. Choose the service mentioned here?",
@@ -118,7 +133,8 @@ let questions = [
         choice4: "Expert Advise",
         answer: function () {
             return this.choice1
-        }
+        },
+        video: 4
     }, 
     {
         question: "Wholesalers inform the retailers about the new products, their uses, quality, prices, etc. Identify the service provided by them?",
@@ -128,7 +144,8 @@ let questions = [
         choice4: "Risk Sharing",
         answer: function () {
             return this.choice3
-        }
+        },
+        video: 4
     },
     {
         question: "Identify the service offered by retailer to the wholesaler.",
@@ -138,7 +155,8 @@ let questions = [
         choice4: "Economies of scale",
         answer: function () {
             return this.choice2
-        }
+        },
+        video: 3
     },
     {
         question: "Which type of service is not offered by retailers to manufacturers and wholesalers?",
@@ -148,7 +166,8 @@ let questions = [
         choice4: "Helps in distribution of goods",
         answer: function () {
             return this.choice1
-        }
+        },
+        video: 3
     },
     {
         question: "Identify the services of the retailer to wholesaler which states that he makes all types of commodities available to consumers in one place.",
@@ -158,7 +177,8 @@ let questions = [
         choice4: "Helps in distribution of goods",
         answer: function () {
             return this.choice4
-        }
+        },
+        video: 3
     },
     {
         question: "Which of these is not a service of retailer towards manufacturer, wholesaler or consumer?",
@@ -168,7 +188,8 @@ let questions = [
         choice4: "Regular availability of products",
         answer: function () {
             return this.choice2
-        }
+        },
+        video: 3
     },
     {
         question: " Arrangement for the supply of goods at the customer's doorstep is done without any extra charges. Identify the above-mentioned service of the retailer.",
@@ -178,7 +199,8 @@ let questions = [
         choice4: "Wide selection",
         answer: function () {
             return this.choice3
-        }
+        },
+        video: 3
     },
     {
         question: "They satisfy diverse market segments with a wide variety of goods and services under one roof.” The quoted sentence is in reference to.",
@@ -188,7 +210,8 @@ let questions = [
         choice4: "Speciality shops",
         answer: function () {
             return this.choice2
-        }
+        },
+        video: 2
     },
   
     {
@@ -199,7 +222,8 @@ let questions = [
         choice4: "Lack of initiative",
         answer: function () {
             return this.choice3
-        }
+        },
+        video: 2
     },
     {
         question: "Which statement about department stores is not correct?",
@@ -209,7 +233,8 @@ let questions = [
         choice4: "Department stores use centralized buying for all departments.",
         answer: function () {
             return this.choice3
-        }
+        },
+        video: 2
     },
     {
         question: " Which of the following is not the feature of Departmental Store? ",
@@ -219,9 +244,12 @@ let questions = [
         choice4: "Combines both the functions of Retailing as well as Warehousing.",
         answer: function () {
             return this.choice3
-        }
+        },
+        video: 2
     },
 ];
+
+// console.log(questions.length);
 
 const scorePoints = 100;
 const maxQuestions = questions.length;
@@ -252,6 +280,8 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 
+    currentVideo = currentQuestion.video;
+
     // let i = 1;
 
     choices.forEach(choice => {
@@ -263,6 +293,24 @@ getNewQuestion = () => {
     availableQuestions.splice(questionsIndex, 1);
 
     acceptAnswers = true;
+}
+
+
+function videoSelector(videoNumber) {
+    switch (videoNumber) {
+        case 1:
+            return correctAnswerDisplayVideo1.classList.toggle('d-none');
+            break;
+        case 2:
+            return correctAnswerDisplayVideo2.classList.toggle('d-none');
+            break;
+        case 3:
+            return correctAnswerDisplayVideo3.classList.toggle('d-none');
+            break;
+        case 4:
+            return correctAnswerDisplayVideo4.classList.toggle('d-none');
+            break;
+    }
 }
 
 choices.forEach(choice => {
@@ -292,13 +340,16 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.add(classToApply)
 
             correctAnswerDisplay.innerText = `CORRECT ANSWER: ${currentQuestion.answer()}`;
-            correctAnswerDisplayVideo.classList.toggle('d-none');
+
+            // correctAnswerDisplayVideo.classList.toggle('d-none');
+            videoSelector(currentVideo);
+            console.log(currentVideo);
 
             wrong_audio.play()
             
             setTimeout(() => {
                 correctAnswerDisplay.innerText = "";
-                correctAnswerDisplayVideo.classList.toggle('d-none');
+                videoSelector(currentVideo);
             }, 5000);
 
             setTimeout(() => {
