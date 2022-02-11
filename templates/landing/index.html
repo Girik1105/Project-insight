@@ -17,7 +17,7 @@
               
               {% if user.is_authenticated %}
               <div><a href="{% url 'quiz_index' %}" class="btn-get-started scrollto" >Play a Game</a></div>
-              <div style="margin-bottom: 10%;"><a href="{% url 'department_store_video' %}" class="btn-get-started scrollto">Learn a Lesson</a></div>
+              <div style="margin-bottom: 10%;"><a href="{% url 'internal_trade_video' %}" class="btn-get-started scrollto">Learn a Lesson</a></div>
               {% else %}
               <div style="margin-bottom: 10%;"><a href="{% url 'account_signup' %}" class="btn-get-started scrollto">Start</a></div>
               {% endif %}
