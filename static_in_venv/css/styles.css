@@ -112,8 +112,8 @@ nav{
     position: absolute;
 width: 342px;
 height: 197px;
-left: 120px;
-top: 542px;
+/* left: 120px; */
+/* top: 542px; */
 transition: 1s ease-out;
 
 z-index: 1;
@@ -124,9 +124,12 @@ background-color: #EEEEEE;
 .card-body{
     font-size: .8rem;
 }
-.card:hover{
+
+
+
+/* .card:hover{
     top: 442px;
-}
+} */
 .card1{
     position: absolute;
     left: 520px;

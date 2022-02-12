@@ -3,53 +3,40 @@
 
 
 {% block maincontent %}
-
-     <!-- Section-->
-     
-      <section class="cards-wrapper">
-        <div class="card-grid-space" style="position: absolute; font-size:0.7rem; left: 3vh;">
-          
-          <a class="card" href="/static/assets/mindMaps.pdf" style="--bg-img: url(https://growmudra.com/uploads/Blog/33194b94f5177cb1336ac133c9ea5bbd.jpg)">
-            <div>
-              <h1>Mind Map</h1>
-              <p>A table that elucidates upon each and every topic from the chapter Internal Trade.</p>
-              
-              <div class="tags">
-                <div class="tag">Click to View →</div>
-              </div>
-            </div>
-          </a>
+<div class="card-container-wrapper">
+<div class="container-card">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>Mind Map</h3>
+          <p>A table that elucidates upon each and every topic from the chapter Internal Trade.</p>
+          <a href="/static/assets/mindMaps.pdf">View</a>
         </div>
-        <div class="card-grid-space"  style="position: absolute; font-size:0.7rem; left: 50vh;">
-          
-          <a class="card" href="/static/assets/InternalNotes.pdf" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Notes</h1>
-              <p>Learn from notes curated by the specialists. Be it visual or written, you are covered. </p>
-              
-              <div class="tags">
-                <div class="tag">Click to View →</div>
-              </div>
-            </div>
-          </a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Notes</h3>
+          <p>LLearn from notes curated by the specialists. Be it visual or written, you are covered. </p>
+          <a href="/static/assets/InternalNotes.pdf">Read More</a>
         </div>
-        <div class="card-grid-space"  style="position: absolute; font-size:0.7rem; left: 100vh;">
-          
-          <a class="card" href="https://www.hardingconstruction.biz/images/easyblog_articles/15/b2ap3_large_under-constructio_20190518-002239_1.jpg" style="--bg-img: url('https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/09/natural-language-processing-examples.jpeg')">
-            <div>
-              <h1>Coming Soon</h1>
-              <p>Check out our upcoming implementations and be a part of our alpha team.</p>
-             
-              <div class="tags">
-                <div class="tag">Click to View →</div>
-              </div>
-            </div>
-          </a>
+      </div>
+    </div>
+<!--   
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Card Three</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+          <a href="#">Read More</a>
         </div>
-        
-      </section>
-               
-
- 
-              
-      {% endblock maincontent %}
+      </div>
+    </div> -->
+  </div>
+</div>
+{% endblock maincontent %}
