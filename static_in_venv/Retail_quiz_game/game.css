@@ -1,0 +1,120 @@
+body {
+    color: #fff;
+}
+
+#question{
+    background: #DEEDF0;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 20px;
+    background: #FF616D;
+    font-size: 3rem;
+    min-width: 80rem;
+    transition: ease-in .35s;
+}
+
+.correct-answer-display-container {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 4px;
+    background: #ECA3F5;
+    min-width: 80rem;
+}
+
+.correct-answer-display{
+    margin: 0 auto;
+    font-size: 2.7rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,23,0,0.5);
+    transform: scale(1.05);
+    transform: tranform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: #fff;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-item{
+    background: #DEEDF0;
+    border-radius:20px;
+    width: 30rem;
+    margin:4rem;
+   
+}
+
+.hud-prefix {
+    margin: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid #66DE93;
+    margin: 3.7rem auto;
+    border-radius: 50px;
+    overflow: hidden;
+    animation-duration: 3s;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: #66DE93;
+    width: 0%;
+}
+
+.correct-answer-display-video{
+    background: #D57E7E;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem;
+   
+}
+
+.correct-answer-video-text{
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
+

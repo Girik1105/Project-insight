@@ -35,6 +35,8 @@ def internal_trade_video(request):
     context = {}
     return render(request, 'internal/internal_trade.html', context)
 
+
+
 @login_required
 def ep1_video(request):
     context = {}
@@ -75,6 +77,8 @@ def ep8_video(request):
     context = {}
     return render(request, 'external/ep8.html', context)
 
+
+
 @login_required
 def quiz_index(request):
     context = {}
@@ -95,12 +99,90 @@ def quiz_end(request):
     context = {}
     return render(request, 'quiz_game/end.html', context)
 
+
+
+@login_required
+def quiz_for_index(request):
+    context = {}
+    return render(request, 'quiz_game_chain/index.html', context)
+
+@login_required
+def quiz_for_game(request):
+    context = {}
+    return render(request, 'quiz_game_chain/game.html', context)
+
+@login_required
+def quiz_for_end(request):
+    context = {}
+    return render(request, 'quiz_game_chain/end.html', context)
+
+
+
+@login_required
+def quiz_of_index(request):
+    context = {}
+    return render(request, 'quiz_game_wholesale/index.html', context)
+
+@login_required
+def quiz_of_game(request):
+    context = {}
+    return render(request, 'quiz_game_wholesale/game.html', context)
+
+@login_required
+def quiz_of_end(request):
+    context = {}
+    return render(request, 'quiz_game_wholesale/end.html', context)
+
+
+
+@login_required
+def quiz_in_index(request):
+    context = {}
+    return render(request, 'quiz_game_retail/index.html', context)
+
+@login_required
+def quiz_in_game(request):
+    context = {}
+    return render(request, 'quiz_game_retail/game.html', context)
+
+@login_required
+def quiz_in_end(request):
+    context = {}
+    return render(request, 'quiz_game_retail/end.html', context)
+
+
+
+
+@login_required
+def quiz_and_index(request):
+    context = {}
+    return render(request, 'quiz_game_departmental/index.html', context)
+
+@login_required
+def quiz_and_game(request):
+    context = {}
+    return render(request, 'quiz_game_departmental/game.html', context)
+
+@login_required
+def quiz_and_end(request):
+    context = {}
+    return render(request, 'quiz_game_departmental/end.html', context)
+
+
+
+
+
 @login_required
 def retail_game(request):
     context = {}
     return render(request, 'retail_game/WebGL/index.html', context)
 
+
+
 @login_required
 def video_video(request):
     context = {}
     return render(request, 'dashboard/anothervid.html', context)
+
+
+

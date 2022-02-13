@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{% static 'quiz_game/style.css' %}">
+    <link rel="stylesheet" href="{% static 'quiz_game/game.css' %}">
+
+    <style>
+        a {
+            color: #DDFFBC;
+            text-decoration: none;
+            font-size: 3rem;
+            transition: .17s ease-in;
+        }
+        a:hover {
+            color: #93D9A3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question                    
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+
+            <div id="end-btn" class="container d-none m-5">
+                <a href="{% url 'quiz_for_end' %}"><button id="endBtnItem" class="btn btn-primary d-none">Game Completed: Click here to Finish</button></a>
+            </div>
+
+            <h1 id="question">What is the question to this ans?</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+
+            <div class="correct-answer-display-container">
+               
+                    <h4 class="correct-answer-display"></h4>
+                
+                
+            </div>
+
+            <div id="video-item-1" class="correct-answer-display-video d-none">
+                <center>
+                    <h2 class="correct-answer-video-text" style="margin-bottom: 0px;">Look at the video for solution: <a id="quizVideoSolutionLink" target="_blank" href="{% url 'vending_store_video' %}">Here</a></h2>
+                </center>        
+            </div>
+
+            <div id="video-item-2" class="correct-answer-display-video d-none">
+                <center>
+                    <h2 class="correct-answer-video-text" style="margin-bottom: 0px;">Look at the video for solution: <a id="quizVideoSolutionLink" target="_blank" href="{% url 'department_store_video' %}">Here</a></h2>
+                </center>        
+            </div>
+
+            <div id="video-item-3" class="correct-answer-display-video d-none">
+                <center>
+                    <h2 class="correct-answer-video-text" style="margin-bottom: 0px;">Look at the video for solution: <a id="quizVideoSolutionLink" target="_blank" href="{% url 'retail_video' %}">Here</a></h2>
+                </center>        
+            </div>
+
+            <div id="video-item-4" class="correct-answer-display-video d-none">
+                <center>
+                    <h2 class="correct-answer-video-text" style="margin-bottom: 0px;">Look at the video for solution: <a id="quizVideoSolutionLink" target="_blank" href="{% url 'wholesale_video' %}">Here</a></h2>
+                </center>        
+            </div>
+            
+        </div>
+    </div>
+
+    <audio autoplay>
+        <source src="{% static 'ChainStore_quiz_game/lofi.mp3' %}" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+
+    <script src="{% static 'ChainStore_quiz_game/script.js' %}"></script>
+</body>
+</html>
