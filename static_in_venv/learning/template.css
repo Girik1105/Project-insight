@@ -1,0 +1,323 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@200&display=swap');
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection{
+    background-color: #00B0FF;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #8860D0;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.title-wrapper h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.content-area {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #D5EDF6;
+}
+
+.nav-title {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 1200;
+}
+
+.nav-items {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    font-weight: 800;
+}
+
+.navbar .profile-img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.navbar ul li{
+    margin: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul li a{
+    transition: 0.7s;
+}
+
+.navbar ul li a:hover{
+    transform: scale(1.8);
+    color: #51299b;
+}
+
+.learning-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.learning-item {
+    height: 625px;
+    width: 27%;
+
+    border-radius: 10%;
+    border: 1px solid skyblue;
+    
+    margin: 2rem 3rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+.center-aligner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learning-item .learning-image {
+    height: 40%;
+    width: 100%;
+}
+
+.learning-item .learning-title {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    margin: 1.5rem 0 0 0;
+}
+
+.learning-item .learning-desc {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.learning-item .learning-image img {
+    width: 80%;
+    height: 100%;
+}
+ 
+.button-47 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-47:hover,
+.button-47:active {
+  outline: 0;
+}
+
+.button-47:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-47:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-47:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-47 {
+    padding: 16px 32px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+    .title-wrapper h1 {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    .learning-box-wrapper {
+        flex-direction: column;
+    }
+    .learning-item {
+        width: 60%;
+        margin: 2rem auto;
+    }
+
+    .navbar .nav-title {
+        font-size: .8rem;
+    }
+    .learning-item .learning-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .title-wrapper h1 {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: #00B0FF; */
+    }
+    .navbar .nav-title {
+        font-size: 1em;
+    }
+    .nav-items {
+        display: none;
+    }
+    .hamburger-menu {
+        display:block;
+        margin: 0.5rem 2rem 0 2rem;
+    }
+    .hamburger-lines {
+        top: 0;
+        left: 0;
+    }
+    .active  .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        transform: rotate(360deg);
+        transition: 0.7s linear;
+    }
+    .active .nav-items {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        /* background-color: #00B0FF; */
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .active .hamburger-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2rem;
+    }
+    .active .nav-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .active .navbar .nav-title {
+        display: none;
+    }
+    .active .nav-items ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title-wrapper h1 {
+        font-size: 2rem;
+        margin: 1.2rem 0;
+    }
+    .learning-item {
+        width: 90%;
+    }
+    .navbar ul, .nav-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .learning-item {
+        border-radius: 5%;
+    }
+}
