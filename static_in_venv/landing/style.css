@@ -12,6 +12,10 @@
 /* Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
 
+/* Righteous */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&display=swap');
+
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -78,9 +82,27 @@ a{
     border: none;
     border-radius: 16px;
     text-transform: capitalize;
-    transition: 1s all ease-in;
+    transition: 1s ease-in;
+    font-family: 'Righteous', cursive;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #FFBBBB, #D9D7F1);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	
   }
   
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
   .btn:hover {
     background:  linear-gradient(90deg, rgba(90,185,234,1) 4%, rgba(86,128,233,1) 39%, rgba(136,96,208,1) 100%);
     transform: scale(1) !important;
