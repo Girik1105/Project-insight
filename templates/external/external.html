@@ -1,214 +1,106 @@
+{% extends "learning/snippets/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-{% include "external/snippets/head.html" %}
+{% block title %}
+External Trade
+{% endblock title %}
 
-<body>
-    <style>
-        .dropdown-item:hover {
-                background-color: #6A3AC3;
-        }
-        .dropdown-item{
-            color: #E7E6E1;
-        }
-        .cool{
-            margin-left: 4rem;
-            
-        }
-    </style>
+{% block maincontent %}
 
-    {% include "landing/snippets/nav.html" %}
+<div class="top-btn-wrapper">
+    <button type="button" class="slide">
+        <div><a target="_blank" href="{% url 'learning' %}">Back to Learning</a></div>
+        <i class="bi bi-arrow-right"></i>
+      </button>
+</div>
 
-    <div class="container">
+<div class="intro-box">
+    <div class="image"><img class="image-desc" src="https://leverageedu.com/blog/wp-content/uploads/2020/09/Internal-Trade.jpg" alt="..."> </div>
+    <div class="description">
+        <h1 class="title-css">International Business📈 </h1>
+        <p>International Business is the exchange of capital, goods, and services across international borders or territories as there is a need or want of goods or services due to unequal distribution of natural resources among the countries or differences in their productivity level. </p>
+    </div>
+</div>
+
+<div class="external-intro">
+    <h1 class="title-css">Make-A-Trade ✈️</h1>
+    <p class="sub-title-external">An 8 episode Journey</p>
+</div>
+
+<div class="epi-holder">
     
-    <div class="row gx-4 gx-lg-5 align-items-center my-5">
-        <div class="col-lg-5 cool"><img class="img-fluid rounded mb-4 mb-lg-0 " src="https://i0.wp.com/www.globaltrademag.com/wp-content/uploads/2021/02/administration.png?fit=757%2C393&ssl=1" alt="..." /></div>
-        <div class="col-lg-6">
-            <h1 class="font-weight-light ">International Business📈</h1>
-            <p >International Business is the exchange of capital, goods, and services across international borders or territories as there is a need or want of goods or services due to unequal distribution of natural resources among the countries or differences in their productivity level.</p>
-   
-        </div>
+    <div class="episodes">
+       <div class="emoji-wrapper epi-center-wrapper">1️⃣</div> 
+       <div class="epi-intro epi-center-wrapper">
+        <h1 class="title-css">Episode 1</h1>
+        <span>This video covers the meaning of international business and various reasons for international business</span>
+        <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep1_video' %}">play Episode 1</a></div><i class="bi bi-arrow-right"></i></button></div>
+       </div>
     </div>
- 
 
-     <!-- Section-->
-     <section class="py-5">
-        <div class="container px-4 px-lg-5 mt-5"  data-aos="fade-in" data-aos-duration="850">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-
-
-
-
-
-
-                <!-- CARD 1 -->
-
-                <div class="col mb-5" style="margin-top: -5rem;">
-                    <div class="card h-100">
-                        <!--image-->
-                        <img class="card-img-top" src="https://www.worldbank.org/content/dam/photos/780x439/2021/may-2/DistributionalImpactsofTrade_Cover__FullSize_Cover-780.jpg" alt="..." />
-                        <!--details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!--name-->
-                                <h5 class="fw-bolder">Make-A-Trade </h5>
-                                <h6 class="fw-lighter"> An 8 episode Journey</h6>
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" >
-                            <div class="text-center">
-                                <!-- Large modal -->
-                                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target=".bd-example-modal-lg">View</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Make-A-Trade ✈️</h5>
-                                  <button type="button" class="btn btn-outline-danger close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container px-4 px-lg-5">
-                                        
-                                        
-                                     
-                                        <!-- Content Row-->
-                                        <div class="row gx-4 gx-lg-5">
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 1️⃣</h2>
-                                                        <p>This video covers the meaning of international business and various reasons for international business</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-outline-success btn-sm"  href="{% url 'ep1_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 2️⃣</h2>
-                                                        <p>This video covers the differences between domestic and international business and various forms of business operations that constitute international business</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-outline-warning btn-sm" href="{% url 'ep2_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 3️⃣</h2>
-                                                        <p>This video covers the benefits of international business to countries and to firms</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-outline-primary btn-sm"  href="{% url 'ep3_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 4️⃣</h2>
-                                                        <p>This video covers the procedure and documentation which are involved in import procedure from step one i.e. trade enquiry till step five i.e. obtaining letter of credit</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-outline-success btn-sm" href="{% url 'ep4_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 5️⃣</h2>
-                                                        <p>This video covers the step of import procedure from step six i.e. arrange for finance tell Steph 10 custom clearance and release of goods.</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-outline-warning btn-sm"  href="{% url 'ep5_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 6️⃣</h2>
-                                                        <p>This video covers the procedure and documentation which are involved in export drocedure from step one that is receipt of enquiry and sending quotations till step seven i.e. pre-shipment inspection.</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer "><a class="btn btn-outline-primary  btn-sm" href="{% url 'ep6_video' %}" >Play</a></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 7️⃣</h2>
-                                                        <p>This video covers the procedure and documentation which are involved in export procedure from step eight that is Excise clearance till obtaining Bills of exchange.</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-outline-success btn-sm"  href="{% url 'ep7_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-5">
-                                                <div class="card h-100">
-                                                    <div class="card-body">
-                                                        <h2 class="card-title">Episode 8️⃣</h2>
-                                                        <p>This Final video covers the procedure and documentation which are involved in export procedure after obtaining Bills of exchange.</p>
-                                                        
-                                                    </div>
-                                                    <div class="card-footer"><a class="btn btn-outline-warning btn-sm"  href="{% url 'ep8_video' %}">Play</a></div>
-                                                </div>
-                                            </div>
-
-                                            
-        
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                        </div>
-                      </div>
-                </div> 
-
-
-
-
-                 
-
-            </div>
+    <div class="episodes">
+        <div class="emoji-wrapper epi-center-wrapper">2️⃣</div> 
+        <div class="epi-intro epi-center-wrapper">
+         <h1 class="title-css">Episode 2</h1>
+         <span>This video covers the differences between domestic and international business and various forms of business operations that constitute international business</span>
+         <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep2_video' %}">play Episode 2</a></div><i class="bi bi-arrow-right"></i></button></div>
         </div>
-               
-    </div>
- 
-              
-    <!-- Bootstrap Js Script -->
+     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous">
-    </script>
+     <div class="episodes">
+        <div class="emoji-wrapper epi-center-wrapper">3️⃣</div> 
+        <div class="epi-intro epi-center-wrapper">
+         <h1 class="title-css">Episode 3</h1>
+         <span>This video covers the benefits of international business to countries and to firms</span>
+         <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep3_video' %}">play Episode 3</a></div><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <div class="episodes">
+        <div class="emoji-wrapper epi-center-wrapper">4️⃣</div> 
+        <div class="epi-intro epi-center-wrapper">
+         <h1 class="title-css">Episode 4</h1>
+         <span>This video covers the procedure and documentation which are involved in import procedure from step one i.e. trade enquiry till step five i.e. obtaining letter of credit</span>
+         <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep4_video' %}">play Episode 4</a></div><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+     </div>
 
-      <!-- AOS script -->
+     <div class="episodes">
+        <div class="emoji-wrapper epi-center-wrapper">5️⃣</div> 
+        <div class="epi-intro epi-center-wrapper">
+         <h1 class="title-css">Episode 5</h1>
+         <span>This video covers the step of import procedure from step six i.e. arrange for finance tell Steph 10 custom clearance and release of goods</span>
+         <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep5_video' %}">play Episode 5</a></div><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+     </div>
 
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-  
-      <!-- // -->
+     <div class="episodes">
+        <div class="emoji-wrapper epi-center-wrapper">6️⃣</div> 
+        <div class="epi-intro epi-center-wrapper">
+         <h1 class="title-css">Episode 6</h1>
+         <span>This video covers the procedure and documentation which are involved in export drocedure from step one that is receipt of enquiry and sending quotations till step seven i.e. pre-shipment inspection.</span>
+         <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep6_video' %}">play Episode 6</a></div><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+     </div>
 
-</body>
+     <div class="episodes">
+        <div class="emoji-wrapper epi-center-wrapper">7️⃣</div> 
+        <div class="epi-intro epi-center-wrapper">
+         <h1 class="title-css">Episode 7</h1>
+         <span>This video covers the procedure and documentation which are involved in export procedure from step eight that is Excise clearance till obtaining Bills of exchange.</span>
+         <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep7_video' %}">play Episode 7</a></div><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+     </div>
 
-</html>
+     <div class="episodes">
+        <div class="emoji-wrapper epi-center-wrapper">8️⃣</div> 
+        <div class="epi-intro epi-center-wrapper">
+         <h1 class="title-css">Episode 8</h1>
+         <span>This Final video covers the procedure and documentation which are involved in export procedure after obtaining Bills of exchange.</span>
+         <div class="epi-center-wrapper"><button type="button" class="slide epi-center-wrapper"><div><a target="_blank" href="{% url 'ep8_video' %}">play Episode 8</a></div><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+     </div>
+
+</div>
+
+{% endblock maincontent %}

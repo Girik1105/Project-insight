@@ -377,6 +377,19 @@ body {
     justify-content: flex-start;
 }
 
+.epi-holder {
+    width: 100%;
+
+    padding: 2rem;
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .items {
     width: 90%;
     height: auto;
@@ -439,6 +452,62 @@ body {
     font-size: 1.3rem;
     padding: 0.2rem;
 }
+
+.external-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.external-intro p {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.episodes {
+    width: 25%;
+    height: 550px;
+    margin: 2rem 3rem;
+    
+    border: 1px solid #66e9f2;
+    border-radius: 2em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.episodes:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.epi-center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.episodes .emoji-wrapper {
+    width: 100%;
+    font-size: 8rem;
+
+}
+
+.episodes .epi-intro {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.episodes .epi-intro span{
+    margin: 1rem;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 850px) {
     .title-wrapper h1 {
