@@ -214,7 +214,7 @@ header .container {
 }
 
 .text {
-    color: #fff;
+    color: #F5F5F5;
     font-size: 1.7rem;
     text-align: center;
     margin: 1.9rem 0 2.5rem;
@@ -338,8 +338,8 @@ header .container {
 }
 
 .team-item img {
-    height: 90%;
-    width: 50%;
+    height: 10.55rem;
+    width: 10.5rem;
     border-radius: 50%;
 }
 
@@ -464,4 +464,13 @@ header .container {
 
 #light-dark {
     display: none;
+}
+
+.social{
+    transition: .3s ease-in-out;
+}
+
+.social:hover{
+    color: #7900FF;
+    font-size: 2.5rem;
 }
