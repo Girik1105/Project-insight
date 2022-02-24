@@ -12,6 +12,9 @@ urlpatterns = [
     path('video/', views.video_video, name="video_video"),
     path('retail/game/', views.retail_game, name="retail_game"),
     path('internal_trade/video/', views.internal_trade_video, name="internal_trade_video"),
+    path('department-store/visit/', views.department_store_visit, name="department_store_visit"),
+    
+    
     path('ep1/video/', views.ep1_video, name="ep1_video"),
     path('ep2/video/', views.ep2_video, name="ep2_video"),
     path('ep3/video/', views.ep3_video, name="ep3_video"),

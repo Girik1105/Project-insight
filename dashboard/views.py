@@ -35,6 +35,10 @@ def internal_trade_video(request):
     context = {}
     return render(request, 'internal/internal_trade.html', context)
 
+@login_required
+def department_store_visit(request):
+    context = {}
+    return render(request, 'internal/visit_departmental_store.html', context)
 
 
 @login_required
