@@ -169,6 +169,10 @@ a{
   }
   
 
+.external-white {
+    color: white;
+}
+
 .big-wrapper {
     padding: 0 0 2rem;
     width: 100%;
