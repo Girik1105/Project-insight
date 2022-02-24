@@ -179,7 +179,12 @@ body {
 
 .nav-color {
     background-color: #fff;
-}
+
+    
+    box-shadow: 1px 4px 8px -1px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 1px 4px 8px -1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px 4px 8px -1px rgba(0,0,0,0.48);
+    }
 
 
 .nav-title {
@@ -402,6 +407,9 @@ body {
     -webkit-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
     -moz-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
 
+    
+    background-color: #fff;
+
 }
 
 .items .show-bar{
@@ -451,6 +459,8 @@ body {
 
     display: none;
     transition: 1s ease-in;
+
+    overflow: hidden;
 }
 
 .active  .accordian-content {
