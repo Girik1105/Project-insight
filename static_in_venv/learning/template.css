@@ -484,6 +484,25 @@ body {
     text-align: center;
 }
 
+.container-video {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.video-title {
+    font-size: 3rem;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
 @media (min-width: 768px) {
     .button-47 {
       padding: 16px 32px;
@@ -683,6 +702,9 @@ body {
         font-size: 1rem;
     }
     
-    
+    .video-title {
+        font-size: 1.5rem;
+    }
+        
 }
 
