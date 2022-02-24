@@ -39,7 +39,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .top-btn-wrapper  {
     display: flex;
     flex-direction: column;
@@ -55,6 +54,7 @@ body {
     font-size: 3rem;
     text-align: center;
     margin: 3rem 0;
+    color: #fff;
 }
 
 .title-css {
@@ -72,10 +72,12 @@ body {
     padding: 13px 30px 13px;
     margin: 1rem 0;
     outline: 0;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    color: #fff;
+
   }
   
   .slide i {
@@ -117,8 +119,21 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
+    height: 100%;
+
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/058/800/non_2x/abstract-holographic-background-in-pastel-neon-color-design-blurred-wallpaper-illustration-for-your-modern-style-trends-80s-90s-background-for-creative-design-vector.jpg");
+    background-position: center; 
+    background-repeat: repeat; 
+    background-size: cover; 
+}
+
+.vh-giver {
+    height: 100vh;
+}
+
+.purple-crystal {
+    background-image: url("https://images.saymedia-content.com/.image/t_share/MTc4NzM1OTc4MzE0MzQzOTM1/how-to-create-cool-website-backgrounds-the-ultimate-guide.png");
 }
 
 .content-area {
@@ -138,7 +153,11 @@ body {
 
     z-index: 5;
 
+    transition: 0.3s ease-in-out;
     /* background: linear-gradient(90deg, rgba(145,251,255,1) 0%, rgba(130,195,255,1) 49%, rgba(227,183,255,1) 100%); */
+}
+
+.nav-color {
     background-color: #fff;
 }
 
@@ -212,9 +231,6 @@ body {
 .learning-item {
     height: 625px;
     width: 27%;
-
-    border-radius: 10%;
-    border: 1px solid skyblue;
     
     margin: 2rem 3rem;
     padding: 2rem;
@@ -224,7 +240,11 @@ body {
     align-items: center;
     justify-content: flex-start;
 
-
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
 }
 
 .center-aligner {
@@ -316,6 +336,7 @@ body {
     justify-content: flex-start;
 
     padding: 0.7rem 0;
+    color: #fff;
 }
 
 .intro-box .image {
@@ -360,13 +381,17 @@ body {
     box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
     -webkit-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
     -moz-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+
 }
 
 .items .show-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;  
+
+    background-color: #fff;
+    border-radius: 2em;
 }
 
 .items .show-bar-alt{
@@ -374,6 +399,9 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
+
+    background-color: #fff;
+    border-radius: 2em;
 }
 
  .bar-image {
@@ -419,6 +447,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    color: #fff;
 }
 
 .external-intro p {
@@ -454,6 +484,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+
+    background-color: #fff;
 }
 
 .episodes:nth-child(even) {
@@ -501,6 +533,7 @@ body {
     margin: 2rem auto;
     text-align: center;
     font-family: 'Comfortaa', cursive;
+    color: #fff;
 }
 
 @media (min-width: 768px) {

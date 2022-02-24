@@ -1,18 +1,13 @@
-{% extends "landing/snippets/base.html" %}
+{% extends "learning/snippets/base.html" %}
 {% load static %}
-{% load bootstrap4 %}
 
 {% block maincontent %}
-<div class="container-fluid">
-    <h1 class="text-center" style="font-family: 'Rubik', sans-serif; font-size: 2rem; margin: 2%;">Department store video</h1>
-    <center>
-      <video width="80%" height="90%" controls autoplay>
-        <source src="{% static 'videos/depart.mp4' %}" type="video/mp4">
-        <!-- <source src="movie.ogg" type="video/ogg"> -->
-      Your browser does not support the video tag.
-      </video>
-
-    </center>
-    
-</div>
+<div class="container-video">
+  <h1 class="video-title">>Department store video 🎬</h1>
+  <video width="90%" height="70%" controls autoplay>
+    <source src="{% static 'videos/depart.mp4' %}" type="video/mp4">
+    <!-- <source src="movie.ogg" type="video/ogg"> -->
+  Your browser does not support the video tag.
+  </video>
+</div>  
 {% endblock maincontent %}

@@ -1,18 +1,21 @@
 const hamburger = document.querySelector('.hamburger-menu');
 const contentArea = document.querySelector('.main-container')
 
-const navBar = document.querySelector('.navbar');
 
 hamburger.addEventListener('click', () => {
     contentArea.classList.toggle('active');
     console.log('Yes');
 })
 
-// window.onScroll = () => {
-//     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
-//         navBar.classList.add('colored-nav');
-//     }
-// }
+const navbar = document.querySelector('.navbar');
+
+window.onscroll = () => {
+    if (window.scrollY > 200) {
+        navbar.classList.add('nav-color');
+    } else {
+        navbar.classList.remove('nav-color');
+    }
+};
 
 const accBtn = document.querySelectorAll('.accBtn');
 const items = document.querySelectorAll('.items');
