@@ -1,0 +1,33 @@
+{% extends "landing/snippets/base.html" %}
+{% load static %}
+
+{% block title %}
+Explore
+{% endblock title %}
+
+{% block maincontent %}
+<div class="container">
+    <div class="left">
+        <div class="main-title main-title-explore">
+            <h1>Learning Outcomes 🎯</h1>
+        </div>
+        
+            <ul><h3>Internal Trade</h3>
+                <li><i class="bi bi-arrow-right-circle"></i> Describe the meaning and types of internal trade.</li> 
+                <li><i class="bi bi-arrow-right-circle"></i> Specify the services of wholesalers to manufactures & retailers.</li> 
+                <li><i class="bi bi-arrow-right-circle"></i> Explain the services of retailers to wholesalers/manufacturers and consumers.</li> 
+                <li><i class="bi bi-arrow-right-circle"></i> Explain the form of large scale retailers</li> 
+            </ul>
+            <ul><h3>International Business</h3>
+                <li><i class="bi bi-arrow-right-circle"></i> Discuss the meaning and scope of International Business</li>
+                <li><i class="bi bi-arrow-right-circle"></i> Distinguish between Internal and International Business</li>
+                <li><i class="bi bi-arrow-right-circle"></i> Enumerate the benefits of International Business</li>
+                <li><i class="bi bi-arrow-right-circle"></i> Discuss the procedure and documents required for import and export transaction</li>
+            </ul>
+        
+    </div>
+    <div class="right">
+        <img src="{% static 'landing/imgs/person2.svg' %}" class="person" alt="Reload">
+    </div>
+</div>
+{% endblock maincontent %}

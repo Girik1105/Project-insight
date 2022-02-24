@@ -12,7 +12,11 @@ def resources(request):
 
 def about(request):
     context = {}
-    return render(request, 'about/about.html', context)
+    return render(request, 'landing/explore.html', context)
+
+def learning(request):
+    context = {}
+    return render(request, 'learning/learning.html', context)
 
 @login_required
 def internal(request):

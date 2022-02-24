@@ -1,22 +1,81 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  
+  {% include "landing/snippets/head.html" %}
+  
+  <title>{% block title %}Insight{% endblock title %}</title>
 
-{% include 'landing/snippets/head.html' %}
-
+</head>
 <body>
-    <style>
-        .dropdown-item:hover {
-                background-color: #6A3AC3;
-        }
-        .dropdown-item{
-            color: #E7E6E1;
-        }
-    </style>
-    {% include "landing/snippets/nav.html" %}
-
-    {% block maincontent %}{% endblock maincontent %}
     
-    {% include 'landing/snippets/footer.html' %}
+    <main>
+        <div class="big-wrapper light">
+            <header>
+                <div class="container">
+                    
+                    <div class="logo">
+                        <img src="{% static 'landing/imgs/nav.svg' %}" alt="Reload">
+                        <h3>Project Insight</h3>
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">Explore</a></li>
+                            {% if user.is_authenticated %}
+                            <li><a href="{% url 'account_logout' %}"><i class="bi bi-arrow-bar-right"></i></a></li>
+                            {% else %}
+                            <li><a href="{% url 'account_login' %}">Login</a></li>
+                            <li class="btn"><a href="{% url 'account_signup' %}">Get Started</a></li>
+                            {% endif %}
+                            <button id="light-dark" class="toggle-btn">
+                                <i class="bi bi-moon"></i>
+                                <i class="bi bi-moon-fill"></i>
+                            </button>
+                        </ul>
+
+                        <div class="hamburger-menu">
+                        
+                            <div class="hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                            </div>  
+    
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="showcase-area">
+                {% block maincontent %}
+                  
+                {% endblock maincontent %}
+            </div>
+
+            <div class="bottom-area">
+                <div class="container">
+
+                </div>
+            </div>
+
+        </div>
+       
+        {% block mainpage %}
+          
+        {% endblock mainpage %}
+       
+        <div class="footer">
+            <p>Copyright &copy; Insight 2022</p>
+        </div>
+        
+    </main>
+
+<!-- javascript Files -->
+    <script src="{% static 'landing/landing.js' %}"></script>
+
 </body>
 </html>

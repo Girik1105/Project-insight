@@ -32,8 +32,10 @@ urlpatterns = [
     
 
     path('', views.index, name="index"),
+    path('explore/', views.about, name="about"),
+    path('learning/', views.learning, name='learning'),
+
     path('resources/', views.resources, name="resources"),
-    path('about/', views.about, name="about"),
     path('internal/', views.internal, name="internal"),
     path('external/', views.external, name="external")
 ]
