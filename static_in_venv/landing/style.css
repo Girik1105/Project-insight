@@ -9,6 +9,9 @@
 /* Source Sans Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -54,8 +57,12 @@ body::-webkit-scrollbar-track {
 } */
 
 h1,h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     /* color: #fff; */
+}
+
+h3{
+    font-size: 1.2rem;
 }
 
 a{
@@ -94,7 +101,7 @@ a{
     transition: 1s;
     transition-timing-function: ease-in-out;
 
-    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background-image: url("../assets/wall.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -142,7 +149,8 @@ header .container {
 }
 
 .links li{
-    margin: 2rem 1rem;
+    margin: 3rem 1rem;
+    padding-top: 1rem;
     font-size: 1rem;
     font-family: 'Questrial', sans-serif;
     color: white;
@@ -330,7 +338,7 @@ header .container {
 }
 
 .team-item img {
-    height: 100%;
+    height: 90%;
     width: 50%;
     border-radius: 50%;
 }
