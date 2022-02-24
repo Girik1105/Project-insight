@@ -2,10 +2,10 @@
     <div class="nav-title"><h1>Project Insight</h1></div>
     <div class="nav-items">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Learning</a></li>
-            <li><i class="bi bi-arrow-bar-right"></i></li>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">Explore</a></li>
+            <li><a href="{% url 'learning' %}">Learning</a></li>
+            <li><a href="{% url 'account_logout' %}"><i class="bi bi-arrow-bar-right"></i></a></li>
         </ul>
        <div class="nav-img"> <img src="https://isobarscience.com/wp-content/uploads/2020/09/default-profile-picture1.jpg" class="profile-img" alt="Reload"></div>
     </div>

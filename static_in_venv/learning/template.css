@@ -303,32 +303,6 @@ body {
   background-color: #6DCFF6;
 }
 
-@media (min-width: 768px) {
-  .button-47 {
-    padding: 16px 32px;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-    .title-wrapper h1 {
-        font-size: 2.5rem;
-        margin: 2rem 0;
-    }
-    .learning-box-wrapper {
-        flex-direction: column;
-    }
-    .learning-item {
-        width: 60%;
-        margin: 2rem auto;
-    }
-
-    .navbar .nav-title {
-        font-size: .8rem;
-    }
-    .learning-item .learning-title {
-        font-size: 1rem;
-    }
-}
 
 .intro-box {
     width: 80%;
@@ -375,19 +349,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-
-.epi-holder {
-    width: 100%;
-
-    padding: 2rem;
-    margin: 1rem 0;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 .items {
@@ -465,8 +426,23 @@ body {
     padding: 0.5rem;
 }
 
+
+.epi-holder {
+    width: 100%;
+
+    padding: 2rem;
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .episodes {
-    width: 25%;
+    width: 35%;
     height: 550px;
     margin: 2rem 3rem;
     
@@ -508,8 +484,90 @@ body {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .button-47 {
+      padding: 16px 32px;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+      .title-wrapper h1 {
+          font-size: 2.5rem;
+          margin: 2rem 0;
+      }
+      .learning-box-wrapper {
+          flex-direction: column;
+      }
+      .learning-item {
+          width: 60%;
+          margin: 2rem auto;
+      }
+  
+      .navbar .nav-title {
+          font-size: .8rem;
+      }
+      .learning-item .learning-title {
+          font-size: 1rem;
+      }
 
-@media screen and (max-width: 850px) {
+      .intro-box .image {
+        width: 100%;
+    }
+    
+    .intro-box .image .image-desc{
+        width: 100%;
+    }
+    
+    .intro-box .description {
+        width: 100%;
+    }
+      
+    .items {
+        width: 98%;
+    }
+
+    .items .show-bar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .items .show-bar-alt{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+     .bar-image {
+        width: 100%;
+    }
+    
+     .bar-image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 2em;
+    }
+    
+    .bar-desc {
+        width: 100%;
+        padding: 1rem;
+    } 
+
+    .epi-holder {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }   
+    
+        
+    .episodes {
+        width: 55%;
+    }
+  }
+
+  
+@media screen and (max-width: 950px) {
     .title-wrapper h1 {
         font-size: 2rem;
         margin: 1.5rem 0;
@@ -574,6 +632,23 @@ body {
         align-items: center;
         justify-content: space-between;
     }
+    .intro-box {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: Center;
+    }
+    .intro-box .description {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: Center;
+    }
+
+    .episodes {
+        width: 75%;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -592,5 +667,22 @@ body {
     .learning-item {
         border-radius: 5%;
     }
+
+    .title-css {
+        font-size: 1.4rem;
+    }
+
+    .bar-desc p{
+        font-size: 1rem;
+    } 
+    .episodes {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .episodes .epi-intro span{
+        font-size: 1rem;
+    }
+    
+    
 }
 
