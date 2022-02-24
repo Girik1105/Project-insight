@@ -465,3 +465,12 @@ header .container {
 #light-dark {
     display: none;
 }
+
+.social{
+    transition: .3s ease-in-out;
+}
+
+.social:hover{
+    color: #7900FF;
+    font-size: 2.5rem;
+}
