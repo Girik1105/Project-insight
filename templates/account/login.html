@@ -8,10 +8,10 @@
 {% endblock bs4 %}
 
 {% block maincontent %}
-<div class="container">
-    <div class="left external-white">
+<div class="container flex-center">
+    <div class="left external-white" >
         <form method="POST">
-            <h1 class="py-5 text-center" style="font-family: 'Rubik', sans-serif;">Login</h1>
+            <h1 class="py-3 text-center" style="font-family: 'Rubik', sans-serif;">Login</h1>
             {% csrf_token %}
             {% bootstrap_form form %}
             <div class="d-flex flex-column pt-3">

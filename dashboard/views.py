@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def dashboard(request):
     context = {}
-    return render(request, 'dashboard/home.html', context)
+    return render(request, 'dashboard/index.html', context)
 
 @login_required
 def department_store_video(request):
