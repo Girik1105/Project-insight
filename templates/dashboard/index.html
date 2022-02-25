@@ -46,6 +46,15 @@
                         <i class="mdi mdi-settings text-primary"></i>
                         Settings
                       </a>
+					  <a class="dropdown-item" href="{% url 'account_email' %}">
+                        <i class="mdi  mdi-email text-primary"></i>
+                        Account Email
+                      </a>
+					  <a class="dropdown-item" href="{% url 'account_reset_password' %}">
+                        <i class="mdi  mdi-cctv text-primary"></i>
+                        Change Password
+                      </a>
+					  
                       <a class="dropdown-item" href="{% url 'account_logout' %}">
                         <i class="mdi mdi-logout text-primary"></i>
                         Logout
@@ -79,9 +88,9 @@
                   </a>
                   <div class="submenu">
                       <ul>
-                          <li class="nav-item"><a class="nav-link" href="pages/ui-features/buttons.html">Internal Trade</a></li>
-                          <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">International Business</a></li>
-						  <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">Resources</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'internal' %}">Internal Trade</a></li>
+                          <li class="nav-item"><a class="nav-link" href="{% url 'external' %}">International Business</a></li>
+						  <li class="nav-item"><a class="nav-link" href="{% url 'resources' %}">Resources</a></li>
                       </ul>
                   </div>
               </li>

@@ -24,6 +24,8 @@ class user_profile(models.Model):
     birth_date = models.DateField(blank = True, null = True)
     location = models.CharField(max_length = 150, blank = True, null = True)
 
+    score = models.IntegerField(default=0)
+
     def __str__(self):
         return self.user.username
 
@@ -36,3 +38,17 @@ def create_user_profile(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):
     instance.profile.save()
+
+
+class team(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    designation = models.CharField(max_length=300)
+
+    instagram = models.URLField(max_length=200, blank=True, null=True)
+    twitter = models.URLField(max_length=200, blank=True, null=True)
+    github = models.URLField(max_length=200, blank=True, null=True)
+    portfolio = models.URLField(max_length=200, blank=True, null=True)
+

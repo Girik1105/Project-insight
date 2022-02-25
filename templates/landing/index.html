@@ -47,136 +47,38 @@ Home
 <div class="team-h1"><h1>Meet our Team</h1></div>
 
 <div class="team-wrapper light">
+  {% for item in team_members  %}
+    <div class="team-item">
+      <div class="person-image" ><img  src="{{ item.user.profile.profile_picture.url }}" alt="Reload"></div>
     
-
-    <div class="team-item">
-        <div class="person-image" ><img  src="{% static 'landing/imgs/profile_1.jpg' %}" alt="Reload"></div>
-       
-        <div class="person-details">
-            <div><h3>Girik Manchanda</h3></div>
-            <div class="desig">Full-stack Engineer</div>
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, maiores ipsam ea neque a harum, dolore quae in eius aspernatur deserunt 
-                    incidunt facilis illum quo accusantium. Magnam quisquam tempora ex.</p>
-            </div>
-            <div>
-            <div>
-                <div class="wrapper">
-                    <div class="icon twitter">
-                      <div class="tooltip">Twitter</div>
-                      <span><i class="fab fa-twitter"></i></span>
-                    </div>
-                    <div class="icon instagram">
-                      <div class="tooltip">Instagram</div>
-                      <span><i class="fab fa-instagram"></i></span>
-                    </div>
-                    <div class="icon github">
-                      <div class="tooltip">Github</div>
-                      <span><i class="fab fa-github"></i></span>
-                    </div>
-                  </div>
-            </div>
-            </div>
-            <div><button class="btn">Visit Portfolio</button></div>
-        </div>
+      <div class="person-details">
+          <div><h3>{{ item.name }}</h3></div>
+          <div class="desig">{{ item.designation }}</div>
+          <div>
+              <p>{{ item.description }}</p>
+          </div>
+          <div>
+          <div>
+              <div class="wrapper">
+                  <a href="{{ item.twitter }}"><div class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                  </div></a>
+                  <a href="{{ item.instagram }}"><div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                  </div></a>
+                  <a href="{{ item.github }}"><div class="icon github">
+                    <div class="tooltip">Github</div>
+                    <span><i class="fab fa-github"></i></span>
+                  </div></a>
+                </div>
+          </div>
+          </div>
+          <div><button class="btn">Visit Portfolio</button></div>
+      </div>
     </div>
-
-    <div class="team-item">
-        <div class="person-image"><img src="{% static 'landing/imgs/profile_2.jpeg' %}" alt="Reload"></div>
-       
-        <div class="person-details">
-            <div><h3>Ishaan Kalra</h3></div>
-            <div class="desig">Front-end Engineer</div>
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, maiores ipsam ea neque a harum, dolore quae in eius aspernatur deserunt 
-                    incidunt facilis illum quo accusantium. Magnam quisquam tempora ex.</p>
-            </div>
-            <div>
-                <div class="wrapper">
-                    <div class="icon twitter">
-                      <div class="tooltip">Twitter</div>
-                      <span><i class="fab fa-twitter"></i></span>
-                    </div>
-                    <div class="icon instagram">
-                      <div class="tooltip">Instagram</div>
-                      <span><i class="fab fa-instagram"></i></span>
-                    </div>
-                    <div class="icon github">
-                      <div class="tooltip">Github</div>
-                      <span><i class="fab fa-github"></i></span>
-                    </div>
-                  </div>
-            </div>
-            <div><button class="btn">Visit Portfolio</button></div>
-        </div>
-    </div>
-
-    <div class="team-item">
-        <div class="person-image"><img src="{% static 'landing/imgs/profile_3.jpg' %}" alt="Reload"></div>
-       
-        <div class="person-details">
-            <div><h3>Aadit Chaddaa</h3></div>
-            <div class="desig">Front-end Engineer</div>
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, maiores ipsam ea neque a harum, dolore quae in eius aspernatur deserunt 
-                    incidunt facilis illum quo accusantium. Magnam quisquam tempora ex.</p>
-            </div>
-            <div>
-            <div>
-                <div class="wrapper">
-                    <div class="icon twitter">
-                      <div class="tooltip">Twitter</div>
-                      <span><i class="fab fa-twitter"></i></span>
-                    </div>
-                    <div class="icon instagram">
-                      <div class="tooltip">Instagram</div>
-                      <span><i class="fab fa-instagram"></i></span>
-                    </div>
-                    <div class="icon github">
-                      <div class="tooltip">Github</div>
-                      <span><i class="fab fa-github"></i></span>
-                    </div>
-                  </div>
-            </div>
-            </div>
-            <div><button class="btn">Visit Portfolio</button></div>
-        </div>
-    </div>
-
-
-    <div class="team-item">
-        <div class="person-image"><img src="https://isobarscience.com/wp-content/uploads/2020/09/default-profile-picture1.jpg" alt="Reload"></div>
-       
-        <div class="person-details">
-            <div><h3>Lakshay Vason</h3></div>
-            <div class="desig">Editor</div>
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, maiores ipsam ea neque a harum, dolore quae in eius aspernatur deserunt 
-                    incidunt facilis illum quo accusantium. Magnam quisquam tempora ex.</p>
-            </div>
-            <div>
-            <div>
-                <div class="wrapper">
-                    <div class="icon twitter">
-                      <div class="tooltip">Twitter</div>
-                      <span><i class="fab fa-twitter"></i></span>
-                    </div>
-                    <div class="icon instagram">
-                      <div class="tooltip">Instagram</div>
-                      <span><i class="fab fa-instagram"></i></span>
-                    </div>
-                    <div class="icon github">
-                      <div class="tooltip">Github</div>
-                      <span><i class="fab fa-github"></i></span>
-                    </div>
-                  </div>
-            </div>
-            </div>
-            <div><button class="btn">Visit Portfolio</button></div>
-        </div>
-    </div>
-
-
+  {% endfor %}
 </div>
 
 <div class="features-wrapper">

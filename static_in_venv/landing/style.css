@@ -112,6 +112,10 @@ a{
     display: inline-flex;
     margin: 2rem auto;
   }
+
+  .wrapper a  {
+    color: #000;
+  }
   
   .wrapper .icon {
     position: relative;
@@ -144,7 +148,15 @@ a{
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  
+/*   
+  .wrapper a {
+      color: #fff;
+  }
+
+  .wrapper a:hover {
+    color: #fff;
+} */
+
   .wrapper .tooltip::before {
     position: absolute;
     content: "";
