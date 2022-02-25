@@ -16,15 +16,18 @@
             font-weight: 500;
         }
       
+
     </style>
-    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'landing/hamburger.css' %}">
+    <link rel="stylesheet" href="{% static 'learning/template.css' %}">
+
     
 </head>
 <body>
 
     <div class="row container-fluid">
         <div class="col-12">
-            {% include "landing/snippets/nav.html" %}
+            {% include "learning/snippets/nav.html" %}
         </div>
         <div class="col-12">
             {% block maincontent %}

@@ -397,6 +397,54 @@ header .container {
     opacity: 0.2;
 }
 
+.school-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.school-title {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    text-align: left;
+
+    padding: 2rem;
+
+}
+
+.school-title h3 {
+    text-align: left;
+    font-size: 2.5rem;
+
+    align-self: center;
+}
+
+.school-title p{
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.school-logo {
+    width: 30%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.school-logo img{
+    width: 80%;
+    height: 80%;
+}
 
 .team-wrapper {
     display: flex;
@@ -422,8 +470,8 @@ header .container {
 
 .team-item {
     height: 650px;
-    width: 27%;
-    margin: 2rem 3rem;
+    width: 26%;
+    margin: 2rem 1.5rem;
     padding: 1rem;
 
     border:1px solid #64bdf4b2;
