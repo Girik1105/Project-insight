@@ -10,7 +10,7 @@ hamburger.addEventListener('click', () => {
 const navbar = document.querySelector('.navbar');
 
 window.onscroll = () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 50) {
         navbar.classList.add('nav-color');
     } else {
         navbar.classList.remove('nav-color');
