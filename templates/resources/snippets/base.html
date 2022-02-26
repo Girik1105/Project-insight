@@ -4,8 +4,16 @@
 
 {% include 'resources/snippets/head.html' %}
 
+<style>
+    body, .navbar{
+        background-image: url(https://source.unsplash.com/nbuYloot8_U/1600x900);
+        background-repeat:repeat;
+    }
+
+</style>
+
 <body>
-    {% include "landing/snippets/nav.html" %}
+    {% include "learning/snippets/base.html" %}
 
     {% block maincontent %}{% endblock maincontent %}
     
