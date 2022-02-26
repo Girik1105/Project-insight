@@ -905,3 +905,15 @@ color: #ffffff;
     transform: scale(1,1);
     
   }
+
+.login{
+    color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 60%;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+    font-family: Poppins, 'cursive';
+}
