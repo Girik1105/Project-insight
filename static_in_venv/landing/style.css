@@ -511,7 +511,7 @@ header .container {
     width: 100%;
     margin: 2rem 0;
     font-size: 2.5rem;
-    color: #000;
+    color: #fff;
 }
 
 .color-h1 {
@@ -604,11 +604,12 @@ header .container {
     justify-content: flex-start;
     align-items: center;
 
-    background: rgba(231, 231, 231, 0.507);
+    background: #121212;
+    
 }
 
 .features-wrapper {
-    color: black;
+    color: white;
 }
 
 .feature {
@@ -621,7 +622,7 @@ header .container {
     flex-direction: row;
     align-items: flex-start;
 
-    color: black;
+    color: white;
 }
 
 .feature:nth-child(even) {
