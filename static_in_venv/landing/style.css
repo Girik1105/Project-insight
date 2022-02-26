@@ -15,6 +15,9 @@
 /* Righteous */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&display=swap');
 
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -50,7 +53,7 @@ body::-webkit-scrollbar-track {
     --black: #fff;
 }
 
-/* .dark {
+.dark {
     --mainColor: #64bcf4;
     --hoverColor: #5bacdf;
     --backgroundColor: #192e3a;
@@ -58,7 +61,7 @@ body::-webkit-scrollbar-track {
     --darkTwo: #fff;
     --lightOne: rgb(255, 255, 255);
     --lightTwo: #e7e3e3;
-} */
+}
 
 h1,h3 {
     font-family: 'Poppins', sans-serif;
@@ -272,7 +275,7 @@ header .container {
 .links li{
     margin: 3rem 1rem;
     padding-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Questrial', sans-serif;
     color: white;
 }
@@ -284,9 +287,9 @@ header .container {
 }
 
 .links li a:hover{
-   color : var(--purple);
+   color : #FFE61B;
    transition: 1s;
-   transform: scale(1.1);
+   transform: scale(2);
 }
 
 
@@ -722,3 +725,77 @@ color: #ffffff;
     background-color: #333333;
     color: #ffffff;
   }
+
+.cont{
+    margin-top: 1rem;
+   
+    
+}
+.btn-1{
+    
+    display: block;
+    width: 150px;
+    height: 55px;
+    line-height: 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+    
+   
+}
+.btn-1:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+  }
+
+  .btn-2{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+
+  }
+  
+  .btn-2 span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-2:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+  .btn-2:hover{
+    color: #fff;
+  }
+  
+  .btn-2:hover:after{
+    width: 100%;
+  }
+ 
