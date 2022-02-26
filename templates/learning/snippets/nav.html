@@ -5,7 +5,7 @@
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'about' %}">Explore</a></li>
             <li><a href="{% url 'learning' %}">Learning</a></li>
-            <li><a href="{% url 'dashboard' %}"></a><img src="{{ user.profile.profile_picture.url }}" class="profile-img" alt="Reload"></li>
+            <li><a href="{% url 'dashboard' %}"><img src="{{ user.profile.profile_picture.url }}" class="profile-img" alt="Reload"></a></li>
             <li><a href="{% url 'account_logout' %}"><i class="bi bi-arrow-bar-right"></i></a></li>
         </ul>
        

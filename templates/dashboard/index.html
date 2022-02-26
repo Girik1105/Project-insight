@@ -80,20 +80,7 @@
                   <span class="menu-title">Home</span>
                 </a>
               </li>
-              <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="mdi mdi-book-open-page-variant menu-icon"></i>
-                    <span class="{% url 'learning' %}">Learning</span>
-                    <i class="menu-arrow"></i>
-                  </a>
-                  <div class="submenu">
-                      <ul>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'internal' %}">Internal Trade</a></li>
-                          <li class="nav-item"><a class="nav-link" href="{% url 'external' %}">International Business</a></li>
-						  <li class="nav-item"><a class="nav-link" href="{% url 'resources' %}">Resources</a></li>
-                      </ul>
-                  </div>
-              </li>
+              
               <li class="nav-item">
                   <a href="{% url 'about' %}" class="nav-link">
                     <i class="mdi mdi-airballoon menu-icon "></i>
@@ -101,6 +88,20 @@
                     <i class="menu-arrow"></i>
                   </a>
               </li>
+			  <li class="nav-item">
+				<a href="#" class="nav-link">
+				  <i class="mdi mdi-book-open-page-variant menu-icon"></i>
+				  <span class="{% url 'learning' %}">Learning</span>
+				  <i class="menu-arrow"></i>
+				</a>
+				<div class="submenu">
+					<ul>
+						<li class="nav-item"><a class="nav-link" href="{% url 'internal' %}">Internal Trade</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'external' %}">International Business</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'resources' %}">Resources</a></li>
+					</ul>
+				</div>
+			</li>
               <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="mdi mdi-alert menu-icon"></i>
@@ -214,7 +215,7 @@
 								<div class="card-body pt-1">
 									<img src="images/dashboard/face29.png" alt="">  
 									<h2 class="mt-3 text-white mb-3 font-weight-bold">Congratulations
-										Johnson
+										{{ user.profile..url }}
 									</h2>
 									<p>You have done 57.6% more sales today. 
 										Check your new badge in your profile.
