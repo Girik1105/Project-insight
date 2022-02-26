@@ -9,13 +9,21 @@
 
 {% block maincontent %}
 <div class="container flex-center">
-    <div class="left external-white" >
+    <div class="left external-white" style=" color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 60%;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+    font-family: Poppins, 'cursive';" >
         <form method="POST">
-            <h1 class="py-3 text-center" style="font-family: 'Rubik', sans-serif;">Login</h1>
+            <h1 class="py-3 text-center" style="font-weight: 800;" >Login</h1>
             {% csrf_token %}
             {% bootstrap_form form %}
             <div class="d-flex flex-column pt-3">
-                <button  class="mx-auto btn purple__bg white">Sign In</button>
+                <button  class="mx-auto btn-3" style="color: #fff; ">Sign In</button>
                 <p class="align-middle m-auto py-3">Dont have an account? <a href="{% url 'account_signup' %}" > Sign Up</a></p>
                 <!-- <p class="align-middle m-auto py-3">Log In as <a href="{% url 'index' %}" >Guest</a></p> -->
 
