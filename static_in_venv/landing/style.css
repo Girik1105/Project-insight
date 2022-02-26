@@ -225,7 +225,7 @@ a{
     transition: 1s;
     transition-timing-function: ease-in-out;
 
-    background-image: url("../assets/wall.jpg");
+    background-image: url(https://source.unsplash.com/nY14Fs8pxT8/1600x900);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -489,7 +489,7 @@ header .container {
     margin: 2rem 1.5rem;
     padding: 1rem;
 
-    border:1px solid #64bdf4b2;
+    border:1px solid #2C3333;
     border-radius: 8%;
     
 

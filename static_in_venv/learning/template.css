@@ -7,6 +7,12 @@
 /* Comfortaa */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&display=swap');
+
+/* Fredoka Ones */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -50,7 +56,7 @@ body {
 }
 
 .title-wrapper h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     text-align: center;
     margin: 3rem 0;
@@ -188,7 +194,7 @@ body {
 .nav-title {
     font-size: 1rem;
     padding: 1rem 2rem;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Fredoka One', cursive;
     font-weight: 300;
     color: white;
 
@@ -326,6 +332,10 @@ body {
   touch-action: manipulation;
 
   transition: background-color 320ms ease-in;
+
+
+
+
 }
 
 
