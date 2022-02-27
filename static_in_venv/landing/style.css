@@ -513,13 +513,13 @@ header .container {
 .team-h1 {
     text-align: center;
     width: 100%;
-    margin: 2rem 0;
-    font-size: 2.5rem;
-    color: #fff;
+    margin: 2rem;
+    font-size: 2rem;
+    color: rgb(56, 56, 56);
 }
 
 .color-h1 {
-    color: white;
+    color: rgb(56, 56, 56);
 }
 
 .team-item {
