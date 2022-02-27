@@ -22,14 +22,12 @@
 				<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_DMgKk1.json"  background="transparent"  speed="1"  style="width: 90px; height: 90px;"  loop  autoplay></lottie-player>
 				  </div>
 				  <div style="float: right;">
-					<!-- <h3 style="margin: 2.4rem 1rem;
+					<h3 style="margin: 2.4rem 1rem;
 					font-family: 'Roboto', sans-serif;
 					font-size: 2rem;
 					font-weight: 700;
-					color: #000;">Project Insight</h3> -->
-					<svg height="100" width="1000" stroke="#2A4A73" stroke-width="2" class="text-line">
-						<text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="50" y="90" fill="none" font-size = "100">Hello World!</text>
-					  </svg>
+					color: #000;">Project Insight</h3>
+					
 				</div>
 				
 				
@@ -219,8 +217,7 @@
 							<div class="card congratulation-bg text-center" >
 								<div class="card-body pt-1">
 									<img src="images/dashboard/face29.png" alt="">  
-									<h2 class="mt-3 text-white mb-3 font-weight-bold">Congratulations
-										{{ user.profile..url }}
+									<h2 class="mt-3 text-white mb-4 font-weight-bold" style="width: 20rem;">Congratulations {{ user.profile.name }}!
 									</h2>
 									<p>You have done 57.6% more sales today. 
 										Check your new badge in your profile.
@@ -265,28 +262,20 @@
 							</div>
 							<div class="row justify-content-md-start">
 
-								<div class="col-lg-6 d-flex grid-margin stretch-card">
+								<div class="col-lg-12 d-flex grid-margin stretch-card">
 									<div class="card bg-success">
 										<div class="card-body text-white">
-											<h3 class="font-weight-bold mb-3">18,39 (75GB)</h3>
+											<h3 class="font-weight-bold mb-4">Scores</h3>
+											<h4 class="font-weight-lighter mb-4">This tracks shows the time you have spent on this website</h4>
+											<h3 class="pb-0 mb-4">{{ user.profile.score }}</h3>
 											<div class="progress mb-3">
 												<div class="progress-bar  bg-" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
-											<p class="pb-0 mb-0">Bandwidth usage</p>
+											
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-6 d-flex grid-margin stretch-card">
-									<div class="card bg-danger">
-										<div class="card-body text-white">
-											<h3 class="font-weight-bold mb-3">18,39 (75GB)</h3>
-											<div class="progress mb-3">
-												<div class="progress-bar  bg-warning" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-											<p class="pb-0 mb-0">Bandwidth usage</p>
-										</div>
-									</div>
-								</div>
+								
 							</div>
 						
 						</div>
