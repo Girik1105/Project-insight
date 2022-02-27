@@ -54,6 +54,15 @@ header {
     .links ul {
         display: none;
     }
+    .school-wrapper {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .school-title h3 {
+        font-size: 1rem;
+    }
 
     .active .links {
         position: absolute;
@@ -148,4 +157,8 @@ header {
         font-size: 1.4rem;
     }
 
+    body {
+        overflow-x: hidden;
+      }
+      
 }
