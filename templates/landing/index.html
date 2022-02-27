@@ -8,26 +8,31 @@ Home
 {% block maincontent %}
 <div class="container-main">
   <div class="left">
-      <div class="main-title">
+      <div class="main-title" data-aos="fade-down" data-aos-duration="1100"
+      data-aos-easing="ease-in">
           <h1>Welcome to Project Insight</h1>
       </div>
       <p class="text">
           Insight elucidates upon the very core concepts of Internal and External 
           Trade by providing a full-scale solution of beyond text-book learning
       </p>
-      <div class="cta">
-          <a href="{% url 'account_signup' %}" class="btn">Get Started</a>
+      <div class="cta" data-aos="fade" data-aos-duration="1100"
+      data-aos-easing="ease-in">
+          <a href="{% url 'account_signup' %}" class="btn btn-5"> <span>Get Started→</span> </a>
       </div>
   </div>
-  <div class="right">
+  <div class="right" data-aos="fade-right" data-aos-duration="1100"
+  data-aos-easing="ease-in">
       <!-- <img src="imgs/person.svg" class="person" alt="Reload"> -->
   </div>
 </div>
 {% endblock maincontent %}
 
 {% block mainpage %}
-<div class="team-h1"><h1>Our School</h1></div>
-<div class="school-wrapper">
+<div class="team-h1" data-aos="fade" data-aos-duration="1100"
+data-aos-easing="ease-in"><h1>Our School</h1></div>
+<div class="school-wrapper" data-aos="fade " data-aos-duration="1100"
+data-aos-easing="ease-in">
 <div class="school-title"><h3>K.R Mangalam World School</h3>
 <p>The concept of ‘Our World’, forms the basis of K.R. Mangalam. Learning, irrespective of the source, is learning that K.R. Mangalam derives from the world over, to educate and inspire children towards achievement. Every country, every place, every religion, every action and every reaction teaches us something. K.R. Mangalam is a continuous process of amalgamation- amalgamation of strengths of the newer things that happen in our own world, of things that have happened in the past and of things that can happen in the future. Civilizations, religions, cultures, habits, people, places and events that have changed the course of mankind are the core subjects of knowledge.
     <br>
@@ -42,12 +47,15 @@ Home
     <br>
     
 </div>
-<div class="school-logo"><img src="{% static 'index/logo.png' %}" alt=""></div>
+<div class="school-logo" data-aos="fade-left" data-aos-duration="1050"
+data-aos-easing="ease-in"><img src="{% static 'index/logo.png' %}" alt=""></div>
 </div>
 
-<div class="team-h1"><h1>Meet our Team</h1></div>
+<div class="team-h1" data-aos="fade-down" data-aos-duration="1100"
+data-aos-easing="ease-in"><h1>Meet our Team</h1></div>
 
-<div class="team-wrapper light">
+<div class="team-wrapper light" data-aos="zoom-out-up" data-aos-duration="1110"
+data-aos-easing="ease-in">
   {% for item in team_members  %}
     <div class="team-item">
       <div class="person-image" ><img  src="{{ item.user.profile.profile_picture.url }}" alt="Reload"></div>
@@ -85,18 +93,21 @@ Home
 
 <div class="features-wrapper">
 
-    <div class="team-h1"><h1>Why Use Insight?</h1></div>
+    <div class="team-h1 " data-aos="zoom-in" data-aos-duration="1100"
+    data-aos-easing="ease-in"><h1>Why Use Insight?</h1></div>
 
-    <div class="feature">
-        <div class="feature-img"><img src="https://www.blog.motifphotos.com/wp-content/uploads/2020/02/video-1200x800.jpg" alt="Reload"></div>
+    <div class="feature" data-aos="zoom-in-up" data-aos-duration="1100"
+    data-aos-easing="ease-in">
+        <div class="feature-img" data-aos="fade-left"><img src="https://www.blog.motifphotos.com/wp-content/uploads/2020/02/video-1200x800.jpg" alt="Reload"></div>
         <div class="feature-desc">
             <h3>On Demand Videos</h3>
             <p>With Insight u get on demand Videos for strenghtening evey concept!</p>
         </div>
     </div>
 
-    <div class="feature">
-        <div class="feature-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80" alt="Reload"></div>
+    <div class="feature" data-aos="zoom-in" data-aos-duration="1100"
+    data-aos-easing="ease-in">
+        <div class="feature-img" data-aos="fade-right"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80" alt="Reload"></div>
         <div class="feature-desc">
             <h3>Personalised Dashboard</h3>
             <p>A personalized dashboard solving every student problem of yours! Comes with: <br> Todo List
@@ -105,16 +116,18 @@ Home
         </div>
     </div>
 
-    <div class="feature">
-        <div class="feature-img"><img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Reload"></div>
+    <div class="feature" data-aos="zoom-out" data-aos-duration="1100"
+    data-aos-easing="ease-in">
+        <div class="feature-img" data-aos="fade-left"><img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Reload"></div>
         <div class="feature-desc">
             <h3>Forums (Coming Soon)</h3>
             <p>have a doubt? Ask it in the forums and experts will help you!</p>
         </div>
     </div>
 
-    <div class="feature">
-      <div class="feature-img"><img src="https://images.unsplash.com/photo-1521364577880-a15e92cbff6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Reload"></div>
+    <div class="feature" data-aos="zoom-in-up" data-aos-duration="1100"
+    data-aos-easing="ease-in">
+      <div class="feature-img" data-aos="fade-right"><img src="https://images.unsplash.com/photo-1521364577880-a15e92cbff6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Reload"></div>
       <div class="feature-desc">
           <h3>Games</h3>
           <p>Tired from book learning? Learn with the help of games engineered for maximum retention by our fellow developers!</p>
