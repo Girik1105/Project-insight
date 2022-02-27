@@ -21,10 +21,7 @@ Home
           <a href="{% url 'account_signup' %}" class="btn btn-5"> <span>Get Started→</span> </a>
       </div>
   </div>
-  <div class="right" data-aos="fade-right" data-aos-duration="1100"
-  data-aos-easing="ease-in">
-      <!-- <img src="imgs/person.svg" class="person" alt="Reload"> -->
-  </div>
+  
 </div>
 {% endblock maincontent %}
 
@@ -54,7 +51,7 @@ data-aos-easing="ease-in"><img src="{% static 'index/logo.png' %}" alt=""></div>
 <div class="team-h1" data-aos="fade-down" data-aos-duration="1100"
 data-aos-easing="ease-in"><h1>Meet our Team</h1></div>
 
-<div class="team-wrapper light" data-aos="zoom-out-up" data-aos-duration="1110"
+<div class="team-wrapper light" data-aos="zoom-in" data-aos-duration="1128"
 data-aos-easing="ease-in">
   {% for item in team_members  %}
     <div class="team-item">
@@ -84,7 +81,7 @@ data-aos-easing="ease-in">
                 </div>
           </div>
           </div>
-          <div style="margin-bottom: 2rem;"><a class="btn-2" ><span >Visit Portfolio</span> </a></div>
+          <div style="margin-bottom: 2rem;"><a href="{{ item.portfolio }}" class="btn-2" ><span >Visit Portfolio</span> </a></div>
       </div>
     </div>
     
@@ -94,7 +91,7 @@ data-aos-easing="ease-in">
 <div class="features-wrapper">
 
     <div class="team-h1 " data-aos="zoom-in" data-aos-duration="1100"
-    data-aos-easing="ease-in"><h1>Why Use Insight?</h1></div>
+    data-aos-easing="ease-in"><h1 style="color: white;">Why Use Insight?</h1></div>
 
     <div class="feature" data-aos="zoom-in-up" data-aos-duration="1100"
     data-aos-easing="ease-in">
@@ -120,7 +117,7 @@ data-aos-easing="ease-in">
     data-aos-easing="ease-in">
         <div class="feature-img" data-aos="fade-left"><img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Reload"></div>
         <div class="feature-desc">
-            <h3>Forums (Coming Soon)</h3>
+            <h3>Forums</h3>
             <p>have a doubt? Ask it in the forums and experts will help you!</p>
         </div>
     </div>
