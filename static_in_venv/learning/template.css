@@ -71,7 +71,7 @@ body {
 
 
 /* Slide button styling */
-/* .slide {
+.slide {
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -118,7 +118,7 @@ body {
   .slide:hover i {
     opacity: 1;
     transform: translateX(-6px);
-  } */
+  }
   /* End of Slide Button  */
   
   .learn-btn-new {
