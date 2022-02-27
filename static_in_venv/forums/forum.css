@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection{
+    background-color: #00B0FF;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #8860D0;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body{
+    background-image: url("unnamed.jpg");
+    background-image: url("unnamed2.jpg");
+    background-position: center; 
+    background-repeat: repeat; 
+    background-size: cover; 
+}
+
+.blue-btn{
+    padding: 0.75em 1.5em;
+    margin: 0 0.7rem;
+    background: none;
+    color: rgb(96, 223, 255);
+    border: 2px solid;
+    border-radius: 0.7em;
+    font-size: 1em;
+    transition: all 0.7s ease-out; 
+}
+
+.blue-btn:hover{
+    border-color: #00B0FF;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #00B0FF;
+    transform: translateY(-0.25em);
+}
+
+.blue-btn--text {
+    display: inline-block;
+    position: relative;
+}
+
+.sticker  {
+    position: sticky;
+    top: 2%;
+}
+.container-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.left {
+    width: 70%;
+
+    padding: 1rem;
+}
+
+.right {
+    width: 30%;
+
+    padding: 1rem; 
+}
+
+.title-css {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0 0 1.5rem; 
+}
+
+.question { 
+    background-color: #fff;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    border-radius: 2em;
+    box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+}
+
+.ques-prof {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 100%;
+}
+
+.ques-prof-img {
+    width: 10%;
+}
+
+.ques-prof-img img{
+    width: 80%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.ques-prof-desc {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ques-prof-desc p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.ques-prof-desc h3{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.question-h1 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.action-bar {
+    margin: 0.5rem 0.1rem;
+}
+
+.action-bar i {
+    font-size: 2.5rem;
+    margin: 0.2rem;
+    color: #00B0FF;
+}
+
+.answer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin: 2rem 0;
+}
+
+.answers {
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+    width: 90%;
+
+    border-radius: 2em;
+
+    border-radius: 2em;
+    box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+
+    background-color: #fff;
+}
+
+.answer-content {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.related-ques {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    border-radius: 2em;
+    box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 8px 20px -1px rgba(0,0,0,0.53);
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.related-ques h1 {
+    border-bottom: 0.5px solid #00B0FF;
+    align-self: flex-start;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.ques-related-item {
+    width: 100%;
+    margin: 1rem 0.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #0291d3;
+}
+
+
+.related-ques ul{
+    list-style-type: none;
+    margin: 1rem 0;
+    line-height: 1.5;
+
+}
+
+.related-ques ul li{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+}

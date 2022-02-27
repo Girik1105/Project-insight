@@ -29,6 +29,7 @@ urlpatterns = [
 
     path('dashboard/', include('dashboard.urls')),
     path('profile/', include('accounts.urls')),
+    path('forums/', include('forums.urls')),
     
 
     path('', views.index, name="index"),

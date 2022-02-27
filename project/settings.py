@@ -59,6 +59,7 @@ INSTALLED_APPS = [
 
     "accounts",
     "dashboard",
+    "forums",
 
     'bootstrap4',
 ]
