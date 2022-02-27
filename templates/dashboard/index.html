@@ -126,11 +126,6 @@
 					<div class="row">
 						<div class="col-sm-6 mb-4 mb-xl-0">
 							<div class="d-lg-flex align-items-center">
-								<div>
-									<h3 class="text-dark font-weight-bold mt-2 mb-1 p-2">Hi, welcome back!</h3>
-									
-								</div>
-								
 							</div>
 						</div>
 						<div class="col-sm-6">
@@ -159,54 +154,70 @@
 								<div class="card-body">
 									<div class="row">
 										<div class="col-lg-4">
-											<h4 class="card-title">Sales Difference</h4>
-											<canvas id="salesDifference"></canvas>
-											<p class="mt-3 mb-4 mb-lg-0">Lorem ipsum dolor sit amet,
-												consectetur adipisicing elit.
-											</p>
-										</div>
-										<div class="col-lg-5">
-											<h4 class="card-title">Best Sellers</h4>
-											<div class="row">
-												<div class="col-sm-4">
-													<ul class="graphl-legend-rectangle">
-														<li><span class="bg-danger"></span>Automotive</li>
-														<li><span class="bg-warning"></span>Books</li>
-														<li><span class="bg-info"></span>Software</li>
-														<li><span class="bg-success"></span>Video games</li>
-													</ul>
-												</div>
-												<div class="col-sm-8 grid-margin">
-													<canvas id="bestSellers"></canvas>
-												</div>
-											</div>
-											<p class="mt-3 mb-4 mb-lg-0">Lorem ipsum dolor sit amet,
-												consectetur adipisicing elit.
-											</p>
-										</div>
-										<div class="col-lg-3">
-											<h4 class="card-title">Social Media Statistics</h4>
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="progress progress-lg grouped mb-2">
-														<div class="progress-bar  bg-danger" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-														<div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-														<div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-														<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+												<div class="card bg-primary">
+													<div class="card-body text-white">
+														<h3 class="font-weight-bold mb-3">Doubts you have asked</h3>
+														<hr>
+														<h1 class="pb-0 mb-0">12</h1>
 													</div>
 												</div>
-												<div class="col-sm-12">
-													<ul class="graphl-legend-rectangle">
-														<li><span class="bg-danger"></span>Instagram (15%)</li>
-														<li><span class="bg-warning"></span>Facebook (20%)</li>
-														<li><span class="bg-info"></span>Website (25%)</li>
-														<li><span class="bg-success"></span>Youtube (40%)</li>
-													</ul>
+												<br>
+												<div class="card bg-primary">
+													<div class="card-body text-white">
+														<h3 class="font-weight-bold mb-3">Doubts Answered</h3>
+														<hr>
+														<h1 class="pb-0 mb-0">5</h1>
+													</div>
 												</div>
-											</div>
-											<p class="mb-0 mt-2">Lorem ipsum dolor sit amet,
-												consectetur adipisicing elit.
-											</p>
+												<br>
+												<div class="col-lg-12 d-flex grid-margin stretch-card">
+													<div class="card bg-success">
+														<div class="card-body text-white">
+															<h3 class="font-weight-bold mb-4">Notes</h3>
+															<hr>
+															<h5 class="font-weight-lighter mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h5>
+															<br>
+															<h5 class="font-weight-lighter mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h5>
+															<br>
+															<h5 class="font-weight-lighter mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h5>
+														</div>
+													</div>
+												</div>
+
+										</div>
+										<div class="col-lg-3">
+											<h1 class="card-title">Latest Forums messages for you</h1>
+												<div class="card sale-diffrence-border">
+													<div class="card-body">
+														<h2 class="text-dark mb-2 font-weight-bold">Aadit</h2>
+														<h4 class="card-title mb-2">Girik gave dhoka. He is going to sleep and leaving me alone to code.</h4>
+														<small class="text-muted">28 February 2022</small>
+													</div>
+												</div>
+												<br>
+												<div class="card sale-diffrence-border">
+													<div class="card-body">
+														<h2 class="text-dark mb-2 font-weight-bold">Aadit</h2>
+														<h4 class="card-title mb-2">Girik is now okay. He played songs for me before going</h4>
+														<small class="text-muted">28 February 2022</small>
+													</div>
+												</div>
+												<br>
+												<div class="card sale-diffrence-border">
+													<div class="card-body">
+														<h2 class="text-dark mb-2 font-weight-bold">Ishaan</h2>
+														<h4 class="card-title mb-2">My Playlist is clapped.</h4>
+														<small class="text-muted">28 February 2022</small>
+													</div>
+												</div>
+												<br>
+												<div class="card sale-diffrence-border">
+													<div class="card-body">
+														<h2 class="text-dark mb-2 font-weight-bold">Girik</h2>
+														<h4 class="card-title mb-2">Hello guys. I am beta male. I am very submissive and can't talk to girls</h4>
+														<small class="text-muted">28 February 2022</small>
+													</div>
+												</div>
 										</div>
 									</div>
 								</div>
@@ -217,147 +228,28 @@
 							<div class="card congratulation-bg text-center" >
 								<div class="card-body pt-1">
 									<img src="images/dashboard/face29.png" alt="">  
-									<h2 class="mt-3 text-white mb-4 font-weight-bold" style="width: 20rem;">Congratulations {{ user.profile.name }}!
-									</h2>
-									<p>You have done 57.6% more sales today. 
-										Check your new badge in your profile.
-									</p>
+									<div style="background-color: black;">
+									<h1 class="mt-3 text-white mb-4 font-weight-bold" >Welcome Back {{ user.profile.user }}!</h1>
+									</div>
+									<img src="{{ user.profile.profile_picture.url }}" alt="profile" style="border-radius: 150px; width: 15rem; height: 15rem; "/>
+									<br>
+									<br>
+									<div style="background-color: rgb(51, 51, 224); padding: 0.02rem; border-radius: 1rem;">
+									<h3 class="mt-3 text-white mb-4 font-weight-bold" >Name: {{ user.profile.name }}</h3>
+									<h3 class="mt-3 text-white mb-4 font-weight-bold" >Gender: {{ user.profile.gender }}</h3>
+									<h3 class="mt-3 text-white mb-4 font-weight-bold" >Birthday: {{ user.profile.birth_date }}</h3>
+									<h3 class="mt-3 text-white mb-4 font-weight-bold" >Your Score: {{ user.profile.score }}</h3>
+									</div>
+										<div style="width: 15rem; margin: 0 auto;">
+											<div class="card-body text-white">
+												<button type="button" class="btn-1">Leaderboard</button>
+											</div>
+										</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="row">
-						<div class="col-sm-6 flex-column d-flex stretch-card">
-							<div class="row">
-								<div class="col-lg-4 d-flex grid-margin stretch-card">
-									<div class="card bg-primary">
-										<div class="card-body text-white">
-											<h3 class="font-weight-bold mb-3">18,39 (75GB)</h3>
-											<div class="progress mb-3">
-												<div class="progress-bar  bg-warning" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-											<p class="pb-0 mb-0">Bandwidth usage</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 d-flex grid-margin stretch-card">
-									<div class="card sale-diffrence-border">
-										<div class="card-body">
-											<h2 class="text-dark mb-2 font-weight-bold">$6475</h2>
-											<h4 class="card-title mb-2">Sales Difference</h4>
-											<small class="text-muted">APRIL 2019</small>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 d-flex grid-margin stretch-card">
-									<div class="card sale-visit-statistics-border">
-										<div class="card-body">
-											<h2 class="text-dark mb-2 font-weight-bold">$3479</h2>
-											<h4 class="card-title mb-2">Visit Statistics</h4>
-											<small class="text-muted">APRIL 2019</small>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row justify-content-md-start">
-
-								<div class="col-lg-12 d-flex grid-margin stretch-card">
-									<div class="card bg-success">
-										<div class="card-body text-white">
-											<h3 class="font-weight-bold mb-4">Scores</h3>
-											<h4 class="font-weight-lighter mb-4">This tracks shows the time you have spent on this website</h4>
-											<h3 class="pb-0 mb-4">{{ user.profile.score }}</h3>
-											<div class="progress mb-3">
-												<div class="progress-bar  bg-" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						
-						</div>
-						
-
-						<!-- CARD -->
-						<div class="col-sm-6 flex-column d-flex stretch-card">
-							<div class="row flex-grow">
-								
-								<div class="col-sm-6 grid-margin stretch-card">
-									<div class="card">
-										<div class="card-body">
-											<div class="row" >
-												<div class="col-lg-8">
-													<h3 class="font-weight-bold text-dark">Canada,Ontario</h3>
-													<p class="text-dark">Monday 3.00 PM</p>
-													<div class="d-lg-flex align-items-baseline">
-														<h1 class="text-dark font-weight-bold">23<sup class="font-weight-light"><small>o</small><small class="font-weight-medium">c</small></sup></h1>
-														<p class="text-muted ms-3">Partly cloudy</p>
-													</div>
-												</div>
-												<div class="col-lg-4">
-													<div class="position-relative">
-														<img src="images/dashboard/live.png" class="w-100" alt="">
-													</div>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-
-								
-
-								
-
-								<!-- CARD -->
-								<div class="col-sm-6 grid-margin stretch-card">
-									<div class="card">
-										<div class="card-body">
-											<div class="row">
-												<div class="col-sm-12">
-													<div class="d-flex align-items-center justify-content-between">
-														<h4 class="card-title mb-0">Visits Today</h4>
-														<div class="dropdown">
-															<a href="#" class="text-success btn btn-link  px-1"><i class="mdi mdi-refresh"></i></a>
-															<a href="#" class="text-success btn btn-link px-1 dropdown-toggle dropdown-arrow-none" data-bs-toggle="dropdown" id="profileDropdownvisittoday"><i class="mdi mdi-dots-horizontal"></i></a>
-															<div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdownvisittoday">
-																<a class="dropdown-item">
-																	<i class="mdi mdi-grease-pencil text-primary"></i>
-																	Edit
-																</a>
-																<a class="dropdown-item">
-																	<i class="mdi mdi-delete text-primary"></i>
-																	Delete
-																</a>
-															</div>
-														</div>
-													</div>
-													<p class="mt-1">Calculated in last 30 days</p>
-													<div class="d-lg-flex align-items-center justify-content-between">
-														<h1 class="font-weight-bold text-dark">4332</h1>
-														<div class="mb-3">
-															<button type="button" class="btn btn-outline-light text-dark font-weight-normal">Day</button>
-															<button type="button" class="btn btn-outline-light text-dark font-weight-normal">Month</button>
-														</div>
-													</div>
-													<canvas id="visitorsToday"></canvas>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-								
-							</div>
-							
-						</div>
-
-
-						
-					</div>
+					<br>
 				
 				<!-- content-wrapper ends -->
 				<!-- partial:partials/_footer.html -->
