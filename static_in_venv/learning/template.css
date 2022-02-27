@@ -71,7 +71,7 @@ body {
 
 
 /* Slide button styling */
-/* .slide {
+.slide {
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -118,7 +118,7 @@ body {
   .slide:hover i {
     opacity: 1;
     transform: translateX(-6px);
-  } */
+  }
   /* End of Slide Button  */
   
   .learn-btn-new {
@@ -604,6 +604,17 @@ body {
     align-items: center;
     justify-content: center;
 
+}
+
+.video-description {
+    font-size: 1rem;
+    margin: 1rem auto;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    padding: 1rem auto;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
 }
 
 .video-title {

@@ -43,6 +43,10 @@ body::-webkit-scrollbar-track {
     background: #1e1e24;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .light {
     --gradient: linear-gradient(90deg, rgba(136,96,208,1) 0%, rgba(86,128,233,1) 70%, rgba(90,185,234,1) 99%);
     --grey: #C1C8E4;
