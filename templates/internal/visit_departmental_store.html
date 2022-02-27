@@ -4,8 +4,11 @@
 {% block maincontent %}
 <div class="container-video">
   <h1 class="video-title">Visit to Departmental Store</h1>
+  <div class="video-description">
+    <p>I think if you ask people what their concept of heaven is, they would say, if they are honest, that it is a big department store, with new things every week. So come Friends, let's take you to a visit to a Departmental Store -  Big Bazaar</p>
+  </div>
   <video width="90%" height="70%" controls autoplay>
-    <source src="{{% static 'videos/visit_store.mp4' %}" type="video/mp4">
+    <source src="{% static 'videos/visit_store.mp4' %}" type="video/mp4">
     <!-- <source src="movie.ogg" type="video/ogg"> -->
   Your browser does not support the video tag.
   </video>
