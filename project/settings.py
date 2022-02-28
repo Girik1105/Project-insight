@@ -180,7 +180,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if not DEBUG:
-    STATICFILES_STORAGE = 'wwhitenoise.django.GzipManifestStaticFilesStorage'
+    STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 # AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID') 
