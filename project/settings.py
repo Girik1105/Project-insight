@@ -37,7 +37,7 @@ environ.Env.read_env()
 SECRET_KEY = get_random_secret_key() or env('SECRET_KEY') 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['insight-project-krm.herokuapp.com', '127.0.0.1']
 
