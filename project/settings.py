@@ -34,7 +34,7 @@ environ.Env.read_env()
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = get_random_secret_key() or env('SECRET_KEY') 
+SECRET_KEY = env('SECRET_KEY') or get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
@@ -125,31 +125,32 @@ DATABASES = {
 }
 
 
-POSTGRES_DB = env("POSTGRES_DB") #database name
-POSTGRES_PASSWORD = env("POSTGRES_PASSWORD") # database user password
-POSTGRES_USER = env("POSTGRES_USER") # database username
-POSTGRES_HOST = env("POSTGRES_HOST") # database host
-POSTGRES_PORT = env("POSTGRES_PORT") # database port
+if not DEBUG:
+    POSTGRES_DB = env("POSTGRES_DB") #database name
+    POSTGRES_PASSWORD = env("POSTGRES_PASSWORD") # database user password
+    POSTGRES_USER = env("POSTGRES_USER") # database username
+    POSTGRES_HOST = env("POSTGRES_HOST") # database host
+    POSTGRES_PORT = env("POSTGRES_PORT") # database port
 
-POSTGRES_READY = (
-    POSTGRES_DB is not None
-    and POSTGRES_PASSWORD is not None
-    and POSTGRES_USER is not None
-    and POSTGRES_HOST is not None
-    and POSTGRES_PORT is not None
-)
+    POSTGRES_READY = (
+        POSTGRES_DB is not None
+        and POSTGRES_PASSWORD is not None
+        and POSTGRES_USER is not None
+        and POSTGRES_HOST is not None
+        and POSTGRES_PORT is not None
+    )
 
-if POSTGRES_READY:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": POSTGRES_DB,
-            "USER": POSTGRES_USER,
-            "PASSWORD": POSTGRES_PASSWORD,
-            "HOST": POSTGRES_HOST,
-            "PORT": POSTGRES_PORT,
+    if POSTGRES_READY:
+        DATABASES = {
+            "default": {
+                "ENGINE": "django.db.backends.postgresql",
+                "NAME": POSTGRES_DB,
+                "USER": POSTGRES_USER,
+                "PASSWORD": POSTGRES_PASSWORD,
+                "HOST": POSTGRES_HOST,
+                "PORT": POSTGRES_PORT,
+            }
         }
-    }
 
 
 # Heroku Deployment Database
@@ -197,9 +198,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
+
+from .cdn.conf import *
 
 if DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
@@ -214,7 +218,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "learning"
 LOGOUT_REDIRECT_URL = "index"
 
-
+# https://project-insight.sgp1.digitaloceanspaces.com
 
 
 
