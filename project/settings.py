@@ -195,13 +195,11 @@ ACCOUNT_EMAIL_REQUIRED = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'static_in_venv')
 ]
 
 
 STATIC_URL = '/static/'
-
-STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
 
 from .cdn.conf import *
 
@@ -211,7 +209,10 @@ else:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # in production, we want cdn
+
+MEDIA_ROOT = BASE_DIR / "staticfiles-cdn" / "uploads"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
