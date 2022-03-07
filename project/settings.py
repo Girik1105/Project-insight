@@ -39,7 +39,7 @@ SECRET_KEY = get_random_secret_key() or env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['insight-project-krm.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
@@ -65,12 +65,12 @@ INSTALLED_APPS = [
 
     'bootstrap4',
 
-    # 'storages',
+    'storages',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -124,9 +124,39 @@ DATABASES = {
     }
 }
 
-if not DEBUG:
-    db_from_env = dj_database_url.config(conn_max_age=600)
-    DATABASES['default'].update(db_from_env)
+
+POSTGRES_DB = env("POSTGRES_DB") #database name
+POSTGRES_PASSWORD = env("POSTGRES_PASSWORD") # database user password
+POSTGRES_USER = env("POSTGRES_USER") # database username
+POSTGRES_HOST = env("POSTGRES_HOST") # database host
+POSTGRES_PORT = env("POSTGRES_PORT") # database port
+
+POSTGRES_READY = (
+    POSTGRES_DB is not None
+    and POSTGRES_PASSWORD is not None
+    and POSTGRES_USER is not None
+    and POSTGRES_HOST is not None
+    and POSTGRES_PORT is not None
+)
+
+if POSTGRES_READY:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": POSTGRES_DB,
+            "USER": POSTGRES_USER,
+            "PASSWORD": POSTGRES_PASSWORD,
+            "HOST": POSTGRES_HOST,
+            "PORT": POSTGRES_PORT,
+        }
+    }
+
+
+# Heroku Deployment Database
+
+# if not DEBUG:
+#     db_from_env = dj_database_url.config(conn_max_age=600)
+#     DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -179,8 +209,19 @@ else:
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if not DEBUG:
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = "learning"
+LOGOUT_REDIRECT_URL = "index"
+
+
+
+
+
+# Heroku Deployment Code
+
+# if not DEBUG:
+#     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID') 
@@ -204,8 +245,3 @@ if not DEBUG:
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-LOGIN_REDIRECT_URL = "learning"
-LOGOUT_REDIRECT_URL = "index"
