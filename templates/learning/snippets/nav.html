@@ -15,9 +15,13 @@
         <ul>
             <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="{% url 'about' %}">Explore</a></li>
+            {% if user.is_authenticated %}
             <li><a href="{% url 'learning' %}">Learning</a></li>
             <li><a href="{% url 'dashboard' %}"><img src="{{ user.profile.profile_picture.url }}" class="profile-img" alt="Reload"></a></li>
             <li><a href="{% url 'account_logout' %}"><i class="bi bi-arrow-bar-right"></i></a></li>
+            {% else %}
+            <li><a href="{% url 'account_login' %}">Login</a></li>
+            {% endif %}
         </ul>
        
     </div>
