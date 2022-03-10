@@ -97,8 +97,10 @@ header {
     }
 
     .team-item {
+        height: auto;
         width: 80%;
         margin: 2rem auto;
+        border-radius: 5rem;
     }
 
     .feature {
@@ -132,6 +134,7 @@ header {
 }
 
 @media screen and (max-width: 550px) {
+
 
     .feature {
         width: 90%;

@@ -269,6 +269,8 @@ a{
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
+
+    overflow-x: hidden;
 }
 
 .container {
@@ -283,6 +285,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     padding: 0 0.7rem;
+    overflow: hidden;
 }
 
 .logo {
@@ -524,13 +527,13 @@ header .container {
 }
 
 .team-item {
-    height: 650px;
+    height: auto;
     width: 26%;
     margin: 2rem 1.5rem;
     padding: 1rem;
 
     border:1px solid #2C3333;
-    border-radius: 8%;
+    border-radius: 3rem;
     
 
     display: flex;
